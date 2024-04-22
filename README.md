@@ -36,7 +36,8 @@ Yosys
 <img width="641" alt="yosys" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8d16b628-0161-430e-b0fa-e3cd4be44ad2">  
 
 Installation of iverilog   
-sudo apt-get install iverilog  <img width="640" alt="iverilog installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/89c9a9a7-344e-4f25-93f2-2a8f92a52943">
+sudo apt-get install iverilog   
+<img width="640" alt="iverilog installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/89c9a9a7-344e-4f25-93f2-2a8f92a52943">
   
   
 
