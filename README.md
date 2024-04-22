@@ -8,3 +8,4 @@ Installation of Yosys
 Installation of iverilog  
 Installation of gtkwave  
 
+<img width="1120" alt="1 main" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7b4f8c57-2441-4bb9-a018-a6742ed2f1f2">
