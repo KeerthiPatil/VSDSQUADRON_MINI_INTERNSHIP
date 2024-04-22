@@ -37,8 +37,16 @@ Yosys
 
 Installation of iverilog   
 sudo apt-get install iverilog   
-<img width="640" alt="iverilog installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/89c9a9a7-344e-4f25-93f2-2a8f92a52943">
-  
+<img width="640" alt="iverilog installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/89c9a9a7-344e-4f25-93f2-2a8f92a52943">  
+
+
+  Installation of gtkwave   
+  sudo apt update  
+sudo apt install gtkwave    
+<img width="643" alt="gtkwave installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a719993f-8cc2-4045-a504-12c75c436307">  
+<img width="642" alt="gtkwave installation 2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e0e56dc6-0dc5-439a-9e68-001bbd9ee77a">
+
+
   
 
 
