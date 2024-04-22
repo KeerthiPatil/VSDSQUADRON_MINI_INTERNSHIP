@@ -21,6 +21,7 @@ $ git clone https://github.com/riscv/riscv-gnu-toolchain
 make linux  
 <img width="640" alt="RISC-V GNU Compiler Toolchain" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7e6d2933-1ecc-408a-8bcf-57380067b6f6">  
 
+Installation of Yosys   
 $ git clone https://github.com/YosysHQ/yosys.git  
 $ sudo apt install make   
 $ cd yosys  
