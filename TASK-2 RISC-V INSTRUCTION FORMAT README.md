@@ -22,7 +22,8 @@ Few immediate observations we can make about these core formats:
 **1.R-type (Register type):**  
 1.It is Used for arithmetic, logic, and shift operations.  
 2.The length of a binary instruction is 32bit. 
-3. This Instructions uses 3 registers.  
+3. This Instructions uses 3 registers.    
+**R-Format:**  
 
 
     
