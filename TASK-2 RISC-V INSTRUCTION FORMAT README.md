@@ -121,7 +121,18 @@ The opcode for type B is "1100011"
 operation between rs1 and rs2( different conditions)  
 if(condition) = True   
 then pc=pc+immediate value * offset    
-else pc=pc+4;  
+else pc=pc+4;    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0c43b268-f2fc-4118-9a9f-818fec616ca3)      
+Branch instructions include BEQ(equal to),BNE(not equal to),BLT(less than),BGE(greater than),
+BLTU(less than unsigned),BGEU(greater than unsigned).  
+To calculate offset address we need to compose immediate value:IMMD={SXT(IMM[12:1],1'B0}.  
+
+
+
+
+
+
+
 
 
 
