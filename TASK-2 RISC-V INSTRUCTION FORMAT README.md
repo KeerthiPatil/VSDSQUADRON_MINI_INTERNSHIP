@@ -23,7 +23,12 @@ Few immediate observations we can make about these core formats:
 1.It is Used for arithmetic, logic, and shift operations.  
 2.The length of a binary instruction is 32bit. 
 3. This Instructions uses 3 registers.    
-**R-Format:**  
+
+
+**R-Format:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a25b2db8-eb1a-4bb8-8b1c-bd6fd8980612)  
+
+
 
 
     
