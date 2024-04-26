@@ -89,7 +89,8 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 1.store instructions  
 2.In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
 Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
-![Screenshot 2024-04-26 132424](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a6fcb7bc-e1a4-4a61-8d9b-3ff2e95c2d25)    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)
+
 
 
 
