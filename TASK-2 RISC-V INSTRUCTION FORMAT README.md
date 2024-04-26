@@ -95,7 +95,22 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 -In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
 -Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
 
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/75d275b0-1f50-435b-be0c-d6e39e5cc822)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/75d275b0-1f50-435b-be0c-d6e39e5cc822)    
+  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1d1acd4b-b6dc-4e7f-8a77-fb123fd3a8b2)    
+Load is of I-Type used to read the memory and STORE is of S-Type is used to write the values into memory. Address will be caluclated by rs1 and sign extension of immediate value.    
+Address=rs1 + SXT(imm[11:0])  
+Load:rd = M[Address]  
+Store:M[Address]=rs2    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/11b2ac77-519a-4cf0-aa85-8919a574dab0)  
+
+All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.
+
+
+
+
+ 
+
 
 
  
