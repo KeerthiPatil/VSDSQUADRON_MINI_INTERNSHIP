@@ -1,7 +1,7 @@
 
 **RISC-V Instruction Format**  
 RISC-V is a modern, open-source RISC (Reduced Instruction Set Computing) instruction set architecture (ISA) that is designed to be simple, extensible, and suitable for a wide range of applications. The RISC-V ISA defines 6 standard instruction formats, these formats are:  
-**1.	R-type  
+**1.R-type  
 2.	I-type  
 3.	S-type  
 4.	B-type   
@@ -17,6 +17,12 @@ RISC-V is a modern, open-source RISC (Reduced Instruction Set Computing) instruc
 Few immediate observations we can make about these core formats:  
 1.By convention, RISC-V instructions are each 1 word = 4 bytes = 32 bits i.e. fixed-length encoding  
 2.They all reserve the first 7 bits ([6:0]) for the opcode.  
-3.Register-based operations.  
+3.Register-based operations.    
+
+**1.R-type (Register type):**  
+1.It is Used for arithmetic, logic, and shift operations.  
+2.The length of a binary instruction is 32bit. 
+3. This Instructions uses 3 registers.  
+
 
     
