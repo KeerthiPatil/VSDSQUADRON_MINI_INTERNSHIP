@@ -36,6 +36,16 @@ Few immediate observations we can make about these core formats:
 
 ![4](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/f8f22e76-e2ee-4ace-9f88-27e0fe663d09)  
 
+-The above image gives the overview of R-Type along with its bits in corresponding fields.   
+-The opcode for R-Type is "0110011" ( this helps for deciding wheather the instruction is of R-Type or not).     
+-funct3 for ADD/SUB is "000" while the funct7 differentiates the ADD/SUB by 30th Bit ( 30th Bit of SUB is 1 resembling that subtraction operation to be performed)   
+- SRL/SRA is differentiated by 30th bit in funct7 (30th bit of SRA is 1 resembling that Shift Right Arithmetic)
+
+![Screenshot 2024-04-26 123346](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e3c4bfd3-0a2c-488b-aec3-3cc3e88631d3)   
+
+
+
+
 
 
 
