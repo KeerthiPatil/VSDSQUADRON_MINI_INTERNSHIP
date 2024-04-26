@@ -106,7 +106,7 @@ Store:M[Address]=rs2
 
 All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
 
-**4.B-type**    
+**4.B-type (Branch type):**    
 Branch instructions      
 
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0bcb8795-d7f3-421b-9ea1-f8eb04a06a5c)      
