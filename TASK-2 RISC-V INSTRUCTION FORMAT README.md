@@ -60,7 +60,12 @@ Few immediate observations we can make about these core formats:
 **rd:** specifies destination register that receives result of computation    
 Only **imm field** is different from R-format rs2 and funct7 replaced by
  12-bit signed immediate, imm[11:0]
-**The upper 12 bits of I-type is an immediate number. The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type.**
+**The upper 12 bits of I-type is an immediate number. The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type.**    
+**immediate (12)**: 12 bit number  
+– All computations done in words, so 12-bit immediate must be extended to 32 bits  
+– always sign-extended to 32-bits before use in an arithmetic operation  
+Can represent 2^12 different immediates  
+– imm[11:0] can hold values in range [-2^11 , +2^11] 
 
 
 
