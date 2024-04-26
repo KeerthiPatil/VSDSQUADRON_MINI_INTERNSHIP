@@ -154,9 +154,10 @@ It involves immediate value [11:0] and has base register rs1. Here offset is cal
 funct3 is 0 and rd destination register is of 5 bits and opcode is "1100111".  
 JALR is for long jump.
 IMMI= SXT( imm[11:0] )
-JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}
+JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}  
 
-
+**#Analyzing the instructions given to us**  
+1.
 
 
 
