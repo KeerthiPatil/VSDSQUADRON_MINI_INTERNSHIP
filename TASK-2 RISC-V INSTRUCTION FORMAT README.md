@@ -86,10 +86,18 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 -The instructions of I-type are ADDI,SLTI,SLTIU,XORI,ORI,ANDI for shift operations the shift value is stored in "shamt[4:0]" which is of 5bit of immediate value.   
 
 **3.S-type (Store type):**    
-1.store instructions  
-2.In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
-Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)
+1.store instructions    
+
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)   
+-The opcode for S-type is "0100011".  
+-operation defined by funct3.  
+-Value is defined by rs2 and address will be calculated from rs1 and immediate value.  
+-In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
+-Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
+
+
+ 
+
 
 
 
