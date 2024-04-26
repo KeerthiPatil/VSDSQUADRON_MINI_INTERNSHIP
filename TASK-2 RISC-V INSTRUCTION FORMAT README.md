@@ -64,7 +64,9 @@ Few immediate observations we can make about these core formats:
 – All computations done in words, so 12-bit immediate must be extended to 32 bits  
 – always sign-extended to 32-bits before use in an arithmetic operation  
 Can represent 2^12 different immediates  
-– imm[11:0] can hold values in range [-2^11 , +2^11]   
+– imm[11:0] can hold values in range [-2^11 , +2^11]    
+operation is performed by rs1 and constant defined in immediate register.
+
 
 
 
