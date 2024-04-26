@@ -106,7 +106,8 @@ Store:M[Address]=rs2
 
 All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
 
-**4.B-type**
+**4.B-type**    
+branch instructions
 
 
 
