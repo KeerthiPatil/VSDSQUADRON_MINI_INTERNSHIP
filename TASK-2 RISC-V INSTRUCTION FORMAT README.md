@@ -43,7 +43,10 @@ Few immediate observations we can make about these core formats:
 -Each instruction in the RISC-V R-Type format has a unique binary code that defines its specific operation. These codes are different for each instruction, allowing the processor to differentiate between them and execute the correct operation.  
 
 
-![Screenshot 2024-04-26 123346](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e3c4bfd3-0a2c-488b-aec3-3cc3e88631d3)   
+![Screenshot 2024-04-26 123346](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e3c4bfd3-0a2c-488b-aec3-3cc3e88631d3)    
+
+The above image shows the various R-Type instructions and their descriptions.  
+The instructions are ADD,SUB,XOR,BITWISE OR,BITWISE AND,SLA(shift left logic),SRL(shift right logic),SRA(shift right arithematic)(append sign Bit),slt(set lessthan),sltu(set lessthan unsigned)
 
 
 
