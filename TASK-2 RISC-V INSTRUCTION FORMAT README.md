@@ -116,7 +116,14 @@ immediate
 But now immediate represents values -2^12 to +2^12-2 in 2-byte increments  
 The 12 immediate bits encode even 13-bit signed byte offsets (lowest bit of offset is always
 zero, so no need to store it).     
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c97efad-304b-4073-a3df-1e8eea8e12a4)  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c97efad-304b-4073-a3df-1e8eea8e12a4)        
+The opcode for type B is "1100011"  
+operation between rs1 and rs2( different conditions)  
+if(condition) = True   
+then pc=pc+immediate value * offset    
+else pc=pc+4;  
+
+
 
 
 
