@@ -107,7 +107,28 @@ Store:M[Address]=rs2
 All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
 
 **4.B-type**    
-branch instructions
+Branch instructions      
+
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0bcb8795-d7f3-421b-9ea1-f8eb04a06a5c)      
+B-type instructions are mainly used as branch instructions, but they are conditional Branch.  
+B-format is mostly same as S-Format, with two register sources (rs1/rs2) and a 12-bit
+immediate    
+But now immediate represents values -2^12 to +2^12-2 in 2-byte increments  
+The 12 immediate bits encode even 13-bit signed byte offsets (lowest bit of offset is always
+zero, so no need to store it).     
+v![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c97efad-304b-4073-a3df-1e8eea8e12a4)  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
