@@ -47,6 +47,7 @@ Few immediate observations we can make about these core formats:
 
 -The above image shows the various R-Type instructions and their descriptions.  
 -The instructions are ADD,SUB,XOR,BITWISE OR,BITWISE AND,SLA(shift left logic),SRL(shift right logic),SRA(shift right arithematic)(append sign Bit),slt(set lessthan),sltu(set lessthan unsigned)
+-Basically,the result of the corresponding instruction is stored in "rd". For example, to perform addition between r2 and r3. First , addition operation is performed in (rs1 and rs2 (source registers)) and then result is stored in rd. 
 
 
 
