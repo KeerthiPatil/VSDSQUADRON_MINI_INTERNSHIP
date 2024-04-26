@@ -136,8 +136,38 @@ upper immediate is 20-bits.
 -The opcode determines the type of operation. There are no funct3, rs1, rs2, and funct7 in U-type.  
 -This type of instruction structure is very simple.  
 -Used for two instructions  
-1.LUI – Load Upper Immediate.  
-2.AUIPC – Add Upper Immediate to PC.  
+1.LUI – Load Upper Immediate.    
+LUI is identified by opcode. The opcode name is LUI and the value is 0110111. This instruction writes U_imm into the high 20 bits of rd, and the low 12 bits of rd will be filled with 0.
+2.AUIPC – Add Upper Immediate to PC.   
+AUIPC is identified by opcode, the opcode name is AUIPC, and the value is 0010111. The instruction is to place the 20-bit immediate in the high 20 bits of the 32-bit, and add the low 12 to the current PC and write it into the rd register. PC is the program counter.     
+
+**6.J-type**   
+ jump instructions    
+ ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bbddfcfd-5a06-48e1-a515-b3559ba0f0c0)    
+The format of this instruction is very similar to U-type, it only have Rd register and immediate and opcode. At the same time, the immediate of J-type is also disrupted. That means that the CPU must first put the immediate numbers together to restore the original immediate numbers when decoding.  
+ ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/f7710857-d830-47f7-a3d5-d3c81d9a4ed4)   
+This instruction is used to jump to particular location and address is defined by immediate value and stores next instruction address in link register  
+
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/3eec7a71-21e6-4f2f-8bb0-c119d9f9595d)  
+
+It involves immediate value [11:0] and has base register rs1. Here offset is calculated by rs1 and immediate value.
+funct3 is 0 and rd destination register is of 5 bits and opcode is "1100111".  
+JALR is for long jump.
+IMMI= SXT( imm[11:0] )
+JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
