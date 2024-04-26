@@ -104,7 +104,9 @@ Load:rd = M[Address]
 Store:M[Address]=rs2    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/11b2ac77-519a-4cf0-aa85-8919a574dab0)  
 
-All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.
+All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
+
+**4.B-type**
 
 
 
