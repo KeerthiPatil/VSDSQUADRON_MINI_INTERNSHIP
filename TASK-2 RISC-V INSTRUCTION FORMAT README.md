@@ -127,6 +127,19 @@ Branch instructions include BEQ(equal to),BNE(not equal to),BLT(less than),BGE(g
 BLTU(less than unsigned),BGEU(greater than unsigned).  
 To calculate offset address we need to compose immediate value:IMMD={SXT(IMM[12:1],1'B0}.  
 
+**5.U-type (upperimmediate-type):**
+instructions with upper immediates.  
+upper immediate is 20-bits.    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/00434365-ebf7-4e53-a7ed-4a74b3baa83f)  
+-A 20-bit immediate is provided in the U-type instruction.  
+-The final operation result is related to the 20-bit immediate, and the result is written back to the rd register.   
+-The opcode determines the type of operation. There are no funct3, rs1, rs2, and funct7 in U-type.  
+-This type of instruction structure is very simple.  
+-Used for two instructions  
+1.LUI – Load Upper Immediate.  
+2.AUIPC – Add Upper Immediate to PC.  
+
+
 
 
 
