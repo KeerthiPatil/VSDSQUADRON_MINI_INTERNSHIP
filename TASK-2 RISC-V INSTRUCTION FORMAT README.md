@@ -65,7 +65,11 @@ Few immediate observations we can make about these core formats:
 – always sign-extended to 32-bits before use in an arithmetic operation  
 Can represent 2^12 different immediates  
 – imm[11:0] can hold values in range [-2^11 , +2^11]    
-operation is performed by rs1 and constant defined in immediate register.
+operation is performed by rs1 and constant defined in immediate register.   
+![Screenshot 2024-04-26 134500](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/12d6676d-102b-400b-8f09-e92657144bf7)
+
+
+
 
 
 
