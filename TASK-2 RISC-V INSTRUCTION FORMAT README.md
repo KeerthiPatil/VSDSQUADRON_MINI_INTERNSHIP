@@ -52,7 +52,15 @@ Few immediate observations we can make about these core formats:
 1.instructions with immediates, loads.  
 2.The I-Type format is used for various instructions in RISC-V that involve loading values from memory, branching based on immediate values, and performing arithmetic and logical operations with immediate values.  
 
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c9f97c3-ff7a-4450-acf4-79db16accde4)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c9f97c3-ff7a-4450-acf4-79db16accde4)   
+
+-opcode: uniquely specifies the instruction   
+-rs1: specifies a register operand  
+-rd: specifies destination register that receives result of computation  
+- Only imm field is different from R-format rs2 and funct7 replaced by
+ 12-bit signed immediate, imm[11:0]
+-The upper 12 bits of I-type is an immediate number. The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type.  
+
 
 
 
