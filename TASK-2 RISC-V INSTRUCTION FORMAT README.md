@@ -8,4 +8,5 @@ RISC-V is a modern, open-source RISC (Reduced Instruction Set Computing) instruc
 5.	U-type  
 6.	J-type**  
 
-<img width="707" alt="1 " src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/66243587-505c-4fde-ada5-5c1d99089f9c">
+<img width="707" alt="1 " src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/66243587-505c-4fde-ada5-5c1d99089f9c">  
+**RISC-V Instruction Format**
