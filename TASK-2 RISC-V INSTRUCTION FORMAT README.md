@@ -71,9 +71,7 @@ operation is performed by rs1 and constant defined in immediate register.
 -rd and rs1 5-bits.    
 I-Type is used for shift operations such as SLLI(Shift Left Logical Immediate), SRLI(Shift Right Logical Immediate),SRAI(Shift right arithmetic Immediate).    
 Here, one of the higher-order immediate bits is used to distinguish "shift right logical" (SRLI) from "shift right arithmetic: (SRAI).  
-**shamt:**"shift-by-immediate" instructions only use lower 5 bits of the immediate value for shift amount (can only shift by 0-31 positions).    
-
-![Screenshot 2024-04-26 134546](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bd1c6787-d922-46f3-963a-da4d68f47b0c)     
+**shamt:**"shift-by-immediate" instructions only use lower 5 bits of the immediate value for shift amount (can only shift by 0-31 positions).     
 -The above image shows the various I-Type instructions and their descriptions.    
 -The instructions of I-type are ADDI,SLTI,SLTIU,XORI,ORI,ANDI for shift operations the shift value is stored in "shamt[4:0]" which is of 5bit of immediate value.   
 
@@ -86,10 +84,10 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 -Value is defined by rs2 and address will be calculated from rs1 and immediate value.  
 -In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
 -Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/954f90e4-6348-4c00-9514-38ceb0af57b3)
 
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/75d275b0-1f50-435b-be0c-d6e39e5cc822)    
-  
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1d1acd4b-b6dc-4e7f-8a77-fb123fd3a8b2)    
+
+
 Load is of I-Type used to read the memory and STORE is of S-Type is used to write the values into memory. Address will be caluclated by rs1 and sign extension of immediate value.    
 Address=rs1 + SXT(imm[11:0])  
 Load:rd = M[Address]  
