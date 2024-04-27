@@ -156,7 +156,9 @@ JALR is for long jump.
 IMMI= SXT( imm[11:0] )
 JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}  
 
-**Analyzing the instructions**    
+**Analyzing the instructions**     
+
+
 **1.add r6,r2,r1**     
 The given instruction, "add r6, r2, r1," belongs to the R-type instruction set in RISC-V, which is used for arithmetic and logical operations.    
 -opcode: 0110011  
