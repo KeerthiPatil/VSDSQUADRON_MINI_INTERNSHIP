@@ -239,6 +239,16 @@ r2<r4 is True. so,set r11 to 1
 
 
 **7.addi r12,r4,5**   
+The "addi" instruction is used to add an immediate value to a register and store the result in another register. Hence, this instruction belongs to I-type instruction set.  
+-opcode: 0010011  
+-rd (destination register): r12:01100  
+-rs1 (source register): r4:00100  
+-imm[11:0]:5:000000000101  
+-funct3 (for addi operation):000      
+**#32 bit instruction:**  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c5a39651-9f0d-4142-8637-dae70bb29d1e)  
+
+
 
 
 
