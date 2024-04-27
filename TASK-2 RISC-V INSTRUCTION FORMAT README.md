@@ -224,9 +224,10 @@ In RISC-V, the "xor" instruction is also an R-type instruction.
 
 
 **6.slt r11,r2,r4**     
-In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.    
+In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.   
+r2<r4 is True. so,set r11 to 1    
 -opcode: 0110011  
--rd (destination register): r11:01011  
+-rd (destination register): r11:00001  
 -rs1 (first source register): r2:00010  
 -rs2 (second source register): r4:00100  
 -funct3 (for slt operation): 010  
