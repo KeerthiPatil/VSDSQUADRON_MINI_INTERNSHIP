@@ -161,12 +161,12 @@ JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}
 The given instruction, "add r6, r2, r1," belongs to the R-type instruction set in RISC-V, which is used for arithmetic and logical operations.  
 r2 and r1 are source registers,r6 is destination register.  
 Destination register r6 will store the result of adding the contents of registers r2 and r1, as specified by the "add r6, r2, r1" instruction.  
-           opcode: 0110011  
-           rd (destination register): r6:00110  
-           rs1 (first source register): r2:00010  
-           rs2 (second source register): r1:00001  
-           funct3 (for add operation): 000  
-           funct7 (for add operation): 0000000  
+opcode: 0110011  
+rd (destination register): r6:00110  
+rs1 (first source register): r2:00010  
+rs2 (second source register): r1:00001  
+funct3 (for add operation): 000  
+funct7 (for add operation): 0000000  
 
 
 
