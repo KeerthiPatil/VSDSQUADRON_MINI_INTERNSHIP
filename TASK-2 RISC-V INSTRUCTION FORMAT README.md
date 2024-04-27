@@ -232,7 +232,8 @@ In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.
 -funct3 (for slt operation): 010  
 -funct7 (for slt operation): 0000000   
 **#32 bit instruction:**     
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/42bf9ded-9647-4c57-91b3-c9d171edb564)  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/f8783611-76bb-4430-a4c3-62747d9a8409)
+
 
 
 
