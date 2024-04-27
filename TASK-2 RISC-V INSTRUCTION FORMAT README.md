@@ -207,7 +207,21 @@ In RISC-V, the "or" instruction is also an R-type instruction.
 -funct3 (for or operation): 110  
 -funct7 (for or operation): 0000000  
 **#32 bit instruction:**     
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/43005d73-f08e-4895-8289-34c49d2d492b)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/43005d73-f08e-4895-8289-34c49d2d492b)  
+
+
+
+**4.xor r10,r1,r4**     
+In RISC-V, the "xor" instruction is also an R-type instruction.  
+-opcode: 0110011  
+-rd (destination register): r10:01010 
+-rs1 (first source register): r1:00001  
+-rs2 (second source register): r4:00100  
+-funct3 (for xor operation): 100  
+-funct7 (for xor operation): 0000000      
+**#32 bit instruction:**     
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/79331d6a-2efc-4e8b-b422-4a30c5ce2b24)  
+
 
 
 
