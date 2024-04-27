@@ -167,7 +167,7 @@ Destination register r6 will store the result of adding the contents of register
 -rs2 (second source register): r1:00001  
 -funct3 (for add operation): 000  
 -funct7 (for add operation): 0000000  
-32 bits instruction: ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)
+32 bits instruction:    ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)
 
 
 
