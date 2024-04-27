@@ -157,7 +157,7 @@ IMMI= SXT( imm[11:0] )
 JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}  
 
 **Analyzing the instructions**  
-**1.add r6,r2,r1** 
+**1.add r6,r2,r1**   
 The given instruction, "add r6, r2, r1," belongs to the R-type instruction set in RISC-V, which is used for arithmetic and logical operations.  
 r2 and r1 are source registers,r6 is destination register.  
 Destination register r6 will store the result of adding the contents of registers r2 and r1, as specified by the "add r6, r2, r1" instruction.  
