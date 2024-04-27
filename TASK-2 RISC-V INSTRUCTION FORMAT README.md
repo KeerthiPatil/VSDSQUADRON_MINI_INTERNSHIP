@@ -34,20 +34,15 @@ Few immediate observations we can make about these core formats:
 **rs1 and rs2 (source registers) :** rs1 and rs2 are called source registers instructions need to read the values of the two source registers for operations. The index of rs1 is in bits 15-19, and the index of rs2 is in bits 20-24.  
 **funct7 and funct3 :** combined with opcode, these two field describe what operation to perform. The index of func3 is in bits 12-14, and the index of func7 is in bits 25-31.    
 
-![4](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/f8f22e76-e2ee-4ace-9f88-27e0fe663d09)  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8d839d6e-00dc-4736-b412-914dce3cff82)
 
 -The above image gives the overview of R-Type along with its bits in corresponding fields.   
 -The opcode for R-Type is "0110011" ( this helps for deciding wheather the instruction is of R-Type or not).     
 -funct3 for ADD/SUB is "000" while the funct7 differentiates the ADD/SUB by 30th Bit ( 30th Bit of SUB is 1 resembling that subtraction operation to be performed)     
 -SRL/SRA is differentiated by 30th bit in funct7 (30th bit of SRA is 1 resembling that Shift Right Arithmetic)  
 -Each instruction in the RISC-V R-Type format has a unique binary code that defines its specific operation. These codes are different for each instruction, allowing the processor to differentiate between them and execute the correct operation.  
-
-
-![Screenshot 2024-04-26 123346](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e3c4bfd3-0a2c-488b-aec3-3cc3e88631d3)    
-
--The above image shows the various R-Type instructions and their descriptions.  
--The instructions are ADD,SUB,XOR,BITWISE OR,BITWISE AND,SLA(shift left logic),SRL(shift right logic),SRA(shift right arithematic)(append sign Bit),slt(set lessthan),sltu(set lessthan unsigned)  
--Basically,the result of the corresponding instruction is stored in "rd". For example, to perform addition between r2 and r3. First , addition operation is performed in (rs1 and rs2 (source registers)) and then result is stored in rd.     
+The instructions are ADD,SUB,XOR,BITWISE OR,BITWISE AND,SLA(shift left logic),SRL(shift right logic),SRA(shift right arithematic)(append sign Bit),slt(set lessthan),sltu(set lessthan unsigned)  
+Basically,the result of the corresponding instruction is stored in "rd". For example, to perform addition between r2 and r3. First , addition operation is performed in (rs1 and rs2 (source registers)) and then result is stored in rd.     
 
 
   
