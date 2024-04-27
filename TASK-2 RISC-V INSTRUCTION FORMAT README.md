@@ -270,7 +270,24 @@ The "lw" (load word) instruction is used to load a word from memory into a regis
 -imm[11:0]: 2 :000000000010
 -funct3 (for lw operation): 010    
 **#32 bit instruction:**    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9ff200ae-92de-4316-bccf-3ca8f8575163)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9ff200ae-92de-4316-bccf-3ca8f8575163)   
+
+
+**10.beq r0,r0,15**    
+The given instruction is of B-type instruction.  
+This encoding specifies that "beq" operation, which checks if r0 is equal to r0 then pc=pc+15 program counter will execute instruction after 15 instructions from current instruction  
+-opcode: 1100011
+-rs1 (first source register): r0:00000  
+-rs2 (second source register): r0:00000  
+-imm[12]: 0    
+-imm[10:5]: 15:001111    
+-imm[4:1]: 0    
+-imm[11]: 0   
+-funct3 (for beq operation): 000    
+**#32 bit instruction:**  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/044e637b-0a56-42a7-8055-2d0d1ff27e56)
+
+
 
 
 
