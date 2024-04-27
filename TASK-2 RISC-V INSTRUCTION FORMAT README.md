@@ -63,16 +63,13 @@ Basically,the result of the corresponding instruction is stored in "rd". For exa
 – always sign-extended to 32-bits before use in an arithmetic operation  
 Can represent 2^12 different immediates  
 – imm[11:0] can hold values in range [-2^11 , +2^11]    
-operation is performed by rs1 and constant defined in immediate register.   
-![Screenshot 2024-04-26 134500](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/12d6676d-102b-400b-8f09-e92657144bf7)  
+operation is performed by rs1 and constant defined in immediate register.    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8b4cc265-87a8-4150-89f9-b7dcc326408c)  
 
 -funct3 3-bits with differnt values defining different operations.    
 -The opcode for I-Type is "0010011".  
 -rd and rs1 5-bits.    
-
-![Screenshot 2024-04-26 134525](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/77f143d6-3197-40d7-aa92-7e376e641bcc)  
-
-I-Type is used for shift operations such as SLLI(Shift Left Logical Immediate), SRLI(Shift Right Logical Immediate),SRAI(Shift right arithmetic Immediate).      
+I-Type is used for shift operations such as SLLI(Shift Left Logical Immediate), SRLI(Shift Right Logical Immediate),SRAI(Shift right arithmetic Immediate).    
 Here, one of the higher-order immediate bits is used to distinguish "shift right logical" (SRLI) from "shift right arithmetic: (SRAI).  
 **shamt:**"shift-by-immediate" instructions only use lower 5 bits of the immediate value for shift amount (can only shift by 0-31 positions).    
 
