@@ -259,7 +259,22 @@ The "sw" (store word) instruction is used to store a word from a register into m
 -imm[4:0]: 2:00010    
 -funct3 (for sw operation): 010     
 **#32 bit instruction:**    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6f0fdb04-a498-48b6-bf57-e257099e9234)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6f0fdb04-a498-48b6-bf57-e257099e9234)  
+
+
+**9.LW r13,r1,2**  
+The "lw" (load word) instruction is used to load a word from memory into a register. This instruction belongs to I-type instruction set.  
+-opcode: 0000011
+-rd (destination register): r13:01101
+-rs1 (base register): r1:00001
+-imm[11:0]: 2 :000000000010
+-funct3 (for lw operation): 010    
+**#32 bit instruction:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9ff200ae-92de-4316-bccf-3ca8f8575163)
+
+
+
+
 
 
 
