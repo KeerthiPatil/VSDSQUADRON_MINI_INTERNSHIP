@@ -167,7 +167,7 @@ The given instruction, "add r6, r2, r1," belongs to the R-type instruction set i
 -rs2 (second source register): r1:00001  
 -funct3 (for add operation): 000  
 -funct7 (for add operation): 0000000    
-**32 bit instruction:**  
+**#32 bit instruction:**  
     ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)   
 
 
@@ -180,7 +180,7 @@ The "sub" instruction is also an R-type instruction, similar to the "add" instru
 -rs2 (second source register): r2:00010    
 -funct3 (for sub operation): 000  
 -funct7 (for sub operation): 0100000    
-**32 bit instruction:**   
+**#32 bit instruction:**   
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)  
 
 
@@ -194,7 +194,23 @@ In RISC-V, the "and" instruction is also an R-type instruction.
 -funct3 (for and operation): 111    
 -funct7 (for and operation): 0000000     
 **#32 bit instruction:**   
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/52177b2d-730f-4bd7-badf-c49b9dff5d43)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/52177b2d-730f-4bd7-badf-c49b9dff5d43)  
+
+
+
+**3.or r9,r2,r5**    
+In RISC-V, the "or" instruction is also an R-type instruction.   
+-opcode: 0110011  
+-rd (destination register): r9:01001  
+-rs1 (first source register): r2:00010  
+-rs2 (second source register): r5:00101
+-funct3 (for or operation): 110  
+-funct7 (for or operation): 0000000  
+**#32 bit instruction:**     
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/43005d73-f08e-4895-8289-34c49d2d492b)
+
+
+
 
 
 
