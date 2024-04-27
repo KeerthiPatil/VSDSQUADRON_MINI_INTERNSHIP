@@ -289,6 +289,56 @@ This encoding specifies that "beq" operation, which checks if r0 is equal to r0 
 
 
 
+**11.bne r0,r1,20**    
+If ro!=r1 is true then pc=pc+20----execute 20th instruction from current instruction  
+elsif r0!=r1 is false then pc=pc+4 executes next instruction  
+-opcode: 1100011  
+-rs1 (first source register): r0:00000  
+-rs2 (second source register): r1:00001  
+-imm[12]: 0  
+-imm[10:5]: 20:010100 
+-imm[4:1]: 0 
+-imm[11]: 0 
+-funct3 (for bne operation): 001    
+**#32 bit instruction:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c8967e6b-4626-4a15-9466-a503cbb74297)  
+
+
+
+**12.sll r15,r1,r2(2)**   
+The "sll" (logical left shift) instruction is used to perform a logical left shift on the value in a register. this comes under R-type instruction set.  
+opcode: 0110011
+rd (destination register): r15:01111
+rs1 (source register): r1:00001
+rs2 (shift amount): r2:00010
+funct3 (for sll operation):001
+shamt (shift amount): 2  
+**#32 bit instruction:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/20cf822c-ad32-4ce8-bead-81bf17997a01)  
+This encoding specifies the "sll" operation, which performs a logical left shift on the value in register r1 by 2 positions and stores the result in register r15.
+
+
+
+**13.srl r16,r14,r2(2)**  
+The "srl" (logical right shift) instruction is used to perform a logical right shift on the value in a register.
+-opcode: 0110011
+-rd (destination register): r16:10000
+-rs1 (source register): r14:01110
+-rs2 (shift amount): r2:00010
+-funct3 (for srl operation): 101
+-shamt (shift amount): 2   
+**#32 bit instruction:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8772ade4-a749-4739-b4d3-deab70656220)  
+
+
+
+
+  
+
+
+
+
+
 
 
 
