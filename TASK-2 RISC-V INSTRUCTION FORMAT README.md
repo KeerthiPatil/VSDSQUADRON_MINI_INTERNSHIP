@@ -246,7 +246,20 @@ The "addi" instruction is used to add an immediate value to a register and store
 -imm[11:0]:5:000000000101  
 -funct3 (for addi operation):000      
 **#32 bit instruction:**  
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c5a39651-9f0d-4142-8637-dae70bb29d1e)  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c5a39651-9f0d-4142-8637-dae70bb29d1e)    
+
+
+
+**8.SW r3,r1,2**
+The "sw" (store word) instruction is used to store a word from a register into memory.This instruction belongs to S-type instruction set.    
+-opcode: 0100011  
+-rs1 (base register): r1: 00001    
+-rs2 (source register): r3 00011    
+-imm[11:5]: 2:0000000    
+-imm[4:0]: 2:00010    
+-funct3 (for sw operation): 010     
+**#32 bit instruction:**    
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6f0fdb04-a498-48b6-bf57-e257099e9234)
 
 
 
