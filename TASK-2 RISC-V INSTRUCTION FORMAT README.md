@@ -167,8 +167,24 @@ The given instruction, "add r6, r2, r1," belongs to the R-type instruction set i
 -rs2 (second source register): r1:00001  
 -funct3 (for add operation): 000  
 -funct7 (for add operation): 0000000    
-**32 bits instruction:**  
-    ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)
+**32 bit instruction:**  
+    ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)   
+
+
+
+**2.sub r7,r1,r2**     
+The "sub" instruction is also an R-type instruction, similar to the "add" instruction.  
+-opcode: 0110011    
+-rd (destination register): r7:00111
+rs1 (first source register): r1:00001  
+rs2 (second source register): r2:00010  
+funct3 (for sub operation): 000
+funct7 (for sub operation): 0100000  
+**32 bit instruction:**   
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)
+
+
+
 
 
 
