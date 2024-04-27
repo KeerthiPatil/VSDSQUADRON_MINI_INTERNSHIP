@@ -276,7 +276,7 @@ The "lw" (load word) instruction is used to load a word from memory into a regis
 **10.beq r0,r0,15**    
 The given instruction is of B-type instruction.  
 This encoding specifies that "beq" operation, which checks if r0 is equal to r0 then pc=pc+15 program counter will execute instruction after 15 instructions from current instruction  
--opcode: 1100011
+-opcode: 1100011  
 -rs1 (first source register): r0:00000  
 -rs2 (second source register): r0:00000  
 -imm[12]: 0    
