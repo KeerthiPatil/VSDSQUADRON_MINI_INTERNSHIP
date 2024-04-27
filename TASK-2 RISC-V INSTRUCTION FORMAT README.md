@@ -198,7 +198,7 @@ In RISC-V, the "and" instruction is also an R-type instruction.
 
 
 
-**3.or r9,r2,r5**    
+**4.or r9,r2,r5**    
 In RISC-V, the "or" instruction is also an R-type instruction.   
 -opcode: 0110011  
 -rd (destination register): r9:01001  
@@ -211,7 +211,7 @@ In RISC-V, the "or" instruction is also an R-type instruction.
 
 
 
-**4.xor r10,r1,r4**     
+**5.xor r10,r1,r4**     
 In RISC-V, the "xor" instruction is also an R-type instruction.  
 -opcode: 0110011  
 -rd (destination register): r10:01010   
@@ -220,7 +220,23 @@ In RISC-V, the "xor" instruction is also an R-type instruction.
 -funct3 (for xor operation): 100  
 -funct7 (for xor operation): 0000000      
 **#32 bit instruction:**   
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/79331d6a-2efc-4e8b-b422-4a30c5ce2b24)  
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/79331d6a-2efc-4e8b-b422-4a30c5ce2b24)    
+
+
+**6.slt r11,r2,r4**     
+In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.    
+-opcode: 0110011  
+-rd (destination register): r11:01011  
+-rs1 (first source register): r2:00010  
+-rs2 (second source register): r4:00100  
+-funct3 (for slt operation): 010  
+-funct7 (for slt operation): 0000000   
+**#32 bit instruction:**     
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/42bf9ded-9647-4c57-91b3-c9d171edb564)  
+
+
+
+
 
 
 
