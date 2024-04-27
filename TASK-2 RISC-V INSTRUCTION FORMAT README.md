@@ -181,7 +181,20 @@ rs2 (second source register): r2:00010
 funct3 (for sub operation): 000
 funct7 (for sub operation): 0100000  
 **32 bit instruction:**   
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)  
+
+
+
+**3.and r8,r1,r3**  
+In RISC-V, the "and" instruction is also an R-type instruction.  
+opcode: 0110011    
+rd (destination register): r8:01000   
+rs1 (first source register): r1:00001  
+rs2 (second source register): r3:00011   
+funct3 (for and operation): 111    
+funct7 (for and operation): 0000000     
+**32 bit instruction:**   
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/52177b2d-730f-4bd7-badf-c49b9dff5d43)
 
 
 
