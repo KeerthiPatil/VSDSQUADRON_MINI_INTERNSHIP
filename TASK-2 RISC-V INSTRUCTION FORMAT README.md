@@ -87,12 +87,10 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/954f90e4-6348-4c00-9514-38ceb0af57b3)
 
 
-
 Load is of I-Type used to read the memory and STORE is of S-Type is used to write the values into memory. Address will be caluclated by rs1 and sign extension of immediate value.    
 Address=rs1 + SXT(imm[11:0])  
 Load:rd = M[Address]  
 Store:M[Address]=rs2    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/11b2ac77-519a-4cf0-aa85-8919a574dab0)  
 
 All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
 
@@ -106,13 +104,14 @@ immediate
 But now immediate represents values -2^12 to +2^12-2 in 2-byte increments  
 The 12 immediate bits encode even 13-bit signed byte offsets (lowest bit of offset is always
 zero, so no need to store it).     
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c97efad-304b-4073-a3df-1e8eea8e12a4)        
+       
 The opcode for type B is "1100011"  
 operation between rs1 and rs2( different conditions)  
 if(condition) = True   
 then pc=pc+immediate value * offset    
 else pc=pc+4;    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0c43b268-f2fc-4118-9a9f-818fec616ca3)      
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/53a4be07-0823-44e6-8472-a3ef65d5e855)  
+    
 Branch instructions include BEQ(equal to),BNE(not equal to),BLT(less than),BGE(greater than),
 BLTU(less than unsigned),BGEU(greater than unsigned).  
 To calculate offset address we need to compose immediate value:IMMD={SXT(IMM[12:1],1'B0}.  
@@ -135,10 +134,8 @@ AUIPC is identified by opcode, the opcode name is AUIPC, and the value is 001011
  jump instructions    
  ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bbddfcfd-5a06-48e1-a515-b3559ba0f0c0)    
 The format of this instruction is very similar to U-type, it only have Rd register and immediate and opcode. At the same time, the immediate of J-type is also disrupted. That means that the CPU must first put the immediate numbers together to restore the original immediate numbers when decoding.  
- ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/f7710857-d830-47f7-a3d5-d3c81d9a4ed4)   
-This instruction is used to jump to particular location and address is defined by immediate value and stores next instruction address in link register  
 
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/3eec7a71-21e6-4f2f-8bb0-c119d9f9595d)  
+This instruction is used to jump to particular location and address is defined by immediate value and stores next instruction address in link register    
 
 It involves immediate value [11:0] and has base register rs1. Here offset is calculated by rs1 and immediate value.
 funct3 is 0 and rd destination register is of 5 bits and opcode is "1100111".  
