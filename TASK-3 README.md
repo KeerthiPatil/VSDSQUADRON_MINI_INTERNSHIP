@@ -3,7 +3,7 @@
 $cd    
 $leafpad sum1ton.c &  
 $sudo apt install leafpad     
-**--compilation and execution of C programme  **
+**--compilation and execution of C programme**    
 $gcc sum1ton.c    
 $ls -ltr  
 $./a.out     
