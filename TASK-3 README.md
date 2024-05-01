@@ -1,5 +1,5 @@
 **TASK-3 COMPILING C PROGRAMME USING RISCV COMPILER**  
-**--installation of leafpad**
+**--installation of leafpad**  
 $cd    
 $leafpad sum1ton.c &  
 $sudo apt install leafpad     
