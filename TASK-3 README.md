@@ -37,7 +37,7 @@ The address of the main section is 10184 and its byte addressing. Every next ins
 **--calculation of Number of instrustions**    
 
 *Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
-                           instruction block)/4* 
+                           instruction block)/4*     
                         =(101b0 -10184)/4   
                         =(B)/4
                         =(11)  
