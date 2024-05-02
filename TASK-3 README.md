@@ -45,8 +45,9 @@ So, in total 11 instructions are present in main() function.
 
 $riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
 $riscv64-unknown-elf-objdump -d sum1ton.o | less  
-/main    
-<img width="642" alt="m7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6170d9df-1ebf-44d1-b930-6bb7c908b682">   
+/main      
+<img width="641" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/829e09f7-de8b-4b9c-9c01-6f565f3fb290">
+    
 
 <img width="650" alt="fast" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6956c0b1-017a-4eb7-9fba-d28110aa10f4">     
 
