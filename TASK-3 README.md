@@ -11,7 +11,7 @@ $./a.out
 
 <img width="871" alt="m2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6c4caab8-96d5-44dd-9038-5e826cfe94c8">           
           
-**Compilation of programme in riscv gcc compiler**  
+**--Compilation of programme in riscv gcc compiler**  
 $cat sum1ton.c    
 <img width="639" alt="m3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/40b8cc12-eb50-4df3-a0d1-1d667b6a16d5">  
 
