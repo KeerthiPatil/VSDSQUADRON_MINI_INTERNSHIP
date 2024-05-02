@@ -37,7 +37,7 @@ The address of the main section is 10184 and its byte addressing. Every next ins
                            instruction block)/4* 
                         =(101b0 -10184)/4   
                         =(B)/4
-                        =(11) *--in decimal*    
+                        =(11)  
 So, in total 11 instructions are present in main() function.  
 
 $riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
@@ -56,7 +56,7 @@ $riscv64-unknown-elf-objdump -d sum1ton.o | less
                            instruction block)/4*       
                         =(100dc -100b0)/4           
                         =(2C)/4      
-                        =(11) *--in decimal*          
+                        =(11)         
 So, in total 11 instructions are present in main() function.       
 
 
