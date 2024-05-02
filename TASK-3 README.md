@@ -61,7 +61,19 @@ $riscv64-unknown-elf-objdump -d sum1ton.o | less
                         =(100dc -100b0)/4           
                         =(2C)/4      
                         =(11)         
-So, in total 11 instructions are present in main() function.       
+So, in total 11 instructions are present in main() function.         
+
+
+
+
+**--CONCLUSION**  
+_"While the number of instructions hasn't changed, the program's size has decreased. This change is noticeable in the byte address of the main() function, which previously started with 101b0 but now starts with 100dc."_
+
+
+
+
+
+
 
 
 
