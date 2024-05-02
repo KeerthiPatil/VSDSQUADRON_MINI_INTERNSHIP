@@ -24,7 +24,19 @@ $ls -ltr sum1ton.o
 $riscv64-unknown-elf-objdump -d sum1ton.o  
 $riscv64-unknown-elf-objdump -d sum1ton.o | less  
 /main  
-<img width="644" alt="m6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/400eed94-7b17-4bdf-949c-b0b2d4ad675e">   
+<img width="644" alt="m6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/400eed94-7b17-4bdf-949c-b0b2d4ad675e">      
+
+
+$riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
+$riscv64-unknown-elf-objdump -d sum1ton.o | less  
+/main    
+<img width="642" alt="m7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6170d9df-1ebf-44d1-b930-6bb7c908b682">   
+
+<img width="650" alt="fast" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6956c0b1-017a-4eb7-9fba-d28110aa10f4">  
+
+
+
+
 
 
 
