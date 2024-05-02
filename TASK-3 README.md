@@ -13,7 +13,14 @@ $./a.out
           
 **--Compilation of programme in riscv gcc compiler**  
 $cat sum1ton.c    
-<img width="639" alt="m3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/40b8cc12-eb50-4df3-a0d1-1d667b6a16d5">  
+<img width="639" alt="m3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/40b8cc12-eb50-4df3-a0d1-1d667b6a16d5">     
+
+
+
+$riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c  
+$ls -ltr sum1ton.o    
+<img width="647" alt="m4" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/72ffc8c2-ae1d-4378-aaad-1209b0a66efe">  
+
 
 
 
