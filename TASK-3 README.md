@@ -33,9 +33,9 @@ The address of the main section is 10184 and its byte addressing.
 *Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
                            instruction block)/4* 
                         =(101b0 -10184)/4   
-                        =(B/4)  
-                        =
-
+                        =(B)/4
+                        =(11) *--in decimal*    
+So, in total 11 instructions are peresent in main() function.  
 
 $riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
 $riscv64-unknown-elf-objdump -d sum1ton.o | less  
