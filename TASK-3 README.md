@@ -30,8 +30,8 @@ $riscv64-unknown-elf-objdump -d sum1ton.o | less
 <img width="644" alt="m6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/400eed94-7b17-4bdf-949c-b0b2d4ad675e">     
 The address of the main section is 10184 and its byte addressing.  
 **--calculation of Number of instrustions**  
-Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
-                           instruction block)
+*Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
+                           instruction block)/4*
 
 
 $riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
