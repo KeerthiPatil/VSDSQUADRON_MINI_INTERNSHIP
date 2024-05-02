@@ -27,15 +27,18 @@ $ls -ltr sum1ton.o
 $riscv64-unknown-elf-objdump -d sum1ton.o  
 $riscv64-unknown-elf-objdump -d sum1ton.o | less  
 /main  
-<img width="644" alt="m6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/400eed94-7b17-4bdf-949c-b0b2d4ad675e">     
-The address of the main section is 10184 and its byte addressing. Every next instruction address can be found by adding 4 bytes to the current address.  
-**--calculation of Number of instrustions**  
+<img width="644" alt="m6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/400eed94-7b17-4bdf-949c-b0b2d4ad675e">      
+
+The address of the main section is 10184 and its byte addressing. Every next instruction address can be found by adding 4 bytes to the current address.      
+
+**--calculation of Number of instrustions**    
+
 *Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
                            instruction block)/4* 
                         =(101b0 -10184)/4   
                         =(B)/4
                         =(11) *--in decimal*    
-So, in total 11 instructions are peresent in main() function.  
+So, in total 11 instructions are present in main() function.  
 
 $riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c   
 $riscv64-unknown-elf-objdump -d sum1ton.o | less  
@@ -54,7 +57,7 @@ $riscv64-unknown-elf-objdump -d sum1ton.o | less
                         =(100dc -100b0)/4           
                         =(2C)/4      
                         =(11) *--in decimal*          
-So, in total 11 instructions are peresent in main() function.       
+So, in total 11 instructions are present in main() function.       
 
 
 
