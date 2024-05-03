@@ -90,7 +90,25 @@ $ spike -d pk sum1ton.o
 ```
 $ riscv64-unknown-elf-objdump -d program_name.o | less
 ```			
-<img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">   		
+<img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">				
+
+
+_--Debugging the Assembly Language Program from sum1ton.c and Analyzing Each Register Instruction_		
+
+```
+$ spike -d pk sum1ton.o
+```
+		
+<img width="1120" alt="e4" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/d303da8e-cc95-4f36-bd8b-1734286afac5">		
+
+
+<img width="1120" alt="e6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8831b983-f296-4b24-aeeb-25aa54bc37ab">						
+
+
+<img width="1120" alt="e7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/73bba687-2fb4-469f-b1e4-b463ac39b7ae">				
+
+
+  		
 
 
 
