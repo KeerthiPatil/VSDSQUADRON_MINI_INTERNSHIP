@@ -34,14 +34,21 @@ $ source ~/.bashrc
 
 
 
-*--to install pk((proxy kernal)*  
+*--to install pk(proxy kernal)*  
 $ git clone https://github.com/riscv/riscv-pk.git    
 $ cd riscv-pk    
 $ mkdir build    
 $ cd build      
 $ ../configure --prefix=/home/vsduser/riscv --host=riscv64-unknown-elf --with-arch=rv64gc    
 $ make    
-$ sudo make install    
+$ sudo make install       
+<img width="1118" alt="pk1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c6359e92-9ead-4a29-a4fb-e33c5f673647">   
+
+
+<img width="1120" alt="pk2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/efd084f0-d4fc-4fb3-867b-50df58dfc04b">  
+                                                               
+
+
 
 
 
