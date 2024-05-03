@@ -5,7 +5,8 @@ $gcc sum1ton.c
 $./a.out  
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c       
   
-*--to install spike*   
+*--to install spike*     
+$ cd  
 $ git clone https://github.com/riscv/riscv-isa-sim.git      
 $ cd riscv-isa-sim    
 $ mkdir build  
