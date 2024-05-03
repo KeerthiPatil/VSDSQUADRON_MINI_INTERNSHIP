@@ -58,7 +58,7 @@ $ sudo make install
 
                 
 **#METHOD-2**  
-I have downloaded to VDI file which has spike,pk and riscv installaton.  
+I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3. 
 
                                                                
 
