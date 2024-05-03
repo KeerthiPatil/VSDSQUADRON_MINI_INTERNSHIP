@@ -54,7 +54,10 @@ $ sudo make install
 <img width="1120" alt="pk2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/efd084f0-d4fc-4fb3-867b-50df58dfc04b">            
 
 
-**METHOD-2**  
+
+
+                
+**#METHOD-2**  
 I have downloaded to VDI file which has spike,pk and riscv installaton.  
 
                                                                
