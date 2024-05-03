@@ -102,7 +102,7 @@ $ spike -d pk sum1ton.o
 
 		
 ```
-$ riscv64-unknown-elf-objdump -d program_name.o | less
+$ riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```			
 <img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">				
 
