@@ -1,3 +1,11 @@
+**Spike and pk (proxy kernel)** are components of the RISC-V ISA (Instruction Set Architecture) ecosystem. 			
+
+> * **1.Spike:** _Spike is a RISC-V ISA simulator. It emulates a RISC-V processor and allows to run RISC-V programs on computer without needing actual RISC-V hardware._				
+
+> * **2.Proxy Kernel (pk):** _Proxy Kernel is a small software layer that provides an interface between the RISC-V hardware and a RISC-V operating system. It is used when running an operating system on Spike. pk initializes the system, sets up memory, handles system calls, and provides other essential functionalities required by the operating system._
+
+
+ 
 **#METHOD-1** 		
 		
 **# Installation of spike**      
@@ -61,7 +69,11 @@ $ sudo make install
 			
 **#METHOD-2**  		
 
-I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3.        
+I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3.    
+
+> * Method 1 explains Manual Installation.     		
+> * Method 2 is Pre-installed VDI.  			
+> * Method 1 discusses installing Spike and pk, while Method 2 provides a VirtualBox disk image (VDI) with Spike and pk already installed.		
 
 _--compiling the .C using GCC Compiler_
 ```
