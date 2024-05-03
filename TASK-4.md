@@ -58,7 +58,14 @@ $ sudo make install
 
                 
 **#METHOD-2**  
-I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3. 
+I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3.        
+
+_--GCC Compiler Output_
+```
+$ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ gcc sum1ton.c
+$ ./a.out   
+```
 
                                                                
 
