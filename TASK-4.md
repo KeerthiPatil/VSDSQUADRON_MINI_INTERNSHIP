@@ -1,4 +1,4 @@
-**Installation of spike**    
+**#Installation of spike**     
 
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c    
 $gcc sum1ton.c  
@@ -51,7 +51,12 @@ $ sudo make install
 <img width="1118" alt="pk1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c6359e92-9ead-4a29-a4fb-e33c5f673647">   
 
 
-<img width="1120" alt="pk2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/efd084f0-d4fc-4fb3-867b-50df58dfc04b">  
+<img width="1120" alt="pk2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/efd084f0-d4fc-4fb3-867b-50df58dfc04b">            
+
+
+**METHOD-2**  
+I have downloaded to VDI file which has spike,pk and riscv installaton.  
+
                                                                
 
 
