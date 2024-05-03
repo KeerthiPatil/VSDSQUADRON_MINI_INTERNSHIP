@@ -1,4 +1,4 @@
-**#Installation of spike**     
+**#Installation of spike**      
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c    
 $gcc sum1ton.c  
