@@ -121,12 +121,46 @@ $ spike -d pk sum1ton.o
 
 <img width="1120" alt="e7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/73bba687-2fb4-469f-b1e4-b463ac39b7ae">				
 
-
-  		
-
-
-
-
+                                                                               											
+ **#Analyzing each instruction:**	  		
+ ```
+00000000000100b0 <main>:
+   100b0:       00021537                lui     a0,0x21
+   100b4:       ff010113                addi    sp,sp,-16
+   100b8:       00f00613                li      a2,15
+   100bc:       00500593                li      a1,5
+   100c0:       18050513                addi    a0,a0,384 # 21180 <__clzdi2+0x48>
+   100c4:       00113423                sd      ra,8(sp)
+   100c8:       340000ef                jal     ra,10408 <printf>
+   100cc:       00813083                ld      ra,8(sp)
+   100d0:       00000513                li      a0,0
+   100d4:       01010113                addi    sp,sp,16
+   100d8:       00008067                ret
+```
+**#FIRST INSTRUCTION:** 
+> * The address_of_first_main()_instruction is 100b0 to execute this 
+```
+(spike) until pc 0 101b0
+```
+> * To determine the value stored in the **"a0"** register before the execution of the first instruction, the following command is used.
+```
+(spike) reg 0 a0
+``` 
+> * Press enter to run the first instruction.  
+> * The value of register **"a0"** is **"0x0000000000000001"**, indicating that each position in the 64-bit RISC-V object file contains a 4-bit data, confirming the program's compilation into a 64-bit format.    
+> * After executing the first instruction, we can verify the content of register **"a0"** by using the command reg 0 a0.  
+> * The content of register **"a0"** has been updated due to the **lui a0,0x21** instruction. which loads the upper immediate value 0x21 into the upper bits of register **"a0"**.The 0x prefix signifies that 21 is a hexadecimal value.  
+																			
+**#SECOND INSTRUCTION:**    
+> * The next instruction has sp (stack pointer).  
+> * Before executing the second instruction, we will check the value of the stack pointer (sp).  
+```
+(spike) reg 0 sp
+```
+> * The current value stored in the stack pointer **"(sp)"** is **"0x3ffffffb50"**.Press enter to run the second instruction.    
+> * The addi sp,sp,-16 instruction in the compressed instruction set (rv64c) performs an addition of the immediate value -16 to the stack pointer (sp), effectively subtracting decimal 16 from the current value of the stack pointer.
+> * The value of (16) in decimal is equivalent to (10) in hexadecimal. The stack pointer (sp) value before the execution of addi sp,sp, -16 was 0x3ffffffb50, and subtracting 0x10 from it yields **"0x3ffffffb40"**.
+> * To proceed with executing the next instructions, we will repeat the same procedure.
 
 
                                                                
