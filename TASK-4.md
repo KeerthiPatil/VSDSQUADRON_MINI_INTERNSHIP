@@ -57,8 +57,10 @@ $ sudo make install
 
 
 
-                
-**#METHOD-2**  
+  		              
+			
+**#METHOD-2**  		
+
 I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3.        
 
 _--compiling the .C using GCC Compiler_
@@ -93,7 +95,7 @@ $ riscv64-unknown-elf-objdump -d program_name.o | less
 <img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">				
 
 
-_--Debugging the Assembly Language Program from sum1ton.c and Analyzing Each Register Instruction_		
+_--Debugging the Assembly Language Program from sum1ton.c and Analyzing each Register Instruction_		
 
 ```
 $ spike -d pk sum1ton.o
