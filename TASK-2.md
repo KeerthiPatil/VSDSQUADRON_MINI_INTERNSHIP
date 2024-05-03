@@ -146,71 +146,82 @@ JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}
 **Analyzing the instructions**     
 
 
-**1.add r6,r2,r1**     
+**1.add r6,r2,r1**      
+```
 The given instruction, "add r6, r2, r1," belongs to the R-type instruction set in RISC-V, which is used for arithmetic and logical operations.    
 -opcode: 0110011  
 -rd (destination register): r6:00110  
 -rs1 (first source register): r2:00010  
 -rs2 (second source register): r1:00001  
 -funct3 (for add operation): 000  
--funct7 (for add operation): 0000000    
+-funct7 (for add operation): 0000000
+```  
 **#32 bit instruction:**  
     ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)   
 
 
 
-**2.sub r7,r1,r2**     
+**2.sub r7,r1,r2**       
+```
 The "sub" instruction is also an R-type instruction, similar to the "add" instruction.  
 -opcode: 0110011    
 -rd (destination register): r7:00111  
 -rs1 (first source register): r1:00001  
 -rs2 (second source register): r2:00010    
 -funct3 (for sub operation): 000  
--funct7 (for sub operation): 0100000    
-**#32 bit instruction:**   
+-funct7 (for sub operation): 0100000
+```
+**#32 bit instruction:**     
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)  
 
 
 
-**3.and r8,r1,r3**  
+**3.and r8,r1,r3**    
+```
 In RISC-V, the "and" instruction is also an R-type instruction.  
 -opcode: 0110011    
 -rd (destination register): r8:01000   
 -rs1 (first source register): r1:00001  
 -rs2 (second source register): r3:00011   
 -funct3 (for and operation): 111    
--funct7 (for and operation): 0000000     
-**#32 bit instruction:**   
+-funct7 (for and operation): 0000000
+```    
+**#32 bit instruction:**  
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/52177b2d-730f-4bd7-badf-c49b9dff5d43)  
 
 
 
-**4.or r9,r2,r5**    
+**4.or r9,r2,r5**   
+```
 In RISC-V, the "or" instruction is also an R-type instruction.   
 -opcode: 0110011  
 -rd (destination register): r9:01001  
 -rs1 (first source register): r2:00010  
 -rs2 (second source register): r5:00101
 -funct3 (for or operation): 110  
--funct7 (for or operation): 0000000  
+-funct7 (for or operation): 0000000
+```
 **#32 bit instruction:**     
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/43005d73-f08e-4895-8289-34c49d2d492b)  
 
 
 
-**5.xor r10,r1,r4**     
+**5.xor r10,r1,r4**   
+```
 In RISC-V, the "xor" instruction is also an R-type instruction.  
 -opcode: 0110011  
 -rd (destination register): r10:01010   
 -rs1 (first source register): r1:00001  
 -rs2 (second source register): r4:00100  
 -funct3 (for xor operation): 100  
--funct7 (for xor operation): 0000000      
+-funct7 (for xor operation): 0000000
+```  
 **#32 bit instruction:**   
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/79331d6a-2efc-4e8b-b422-4a30c5ce2b24)    
 
 
-**6.slt r11,r2,r4**     
+**6.slt r11,r2,r4**    
+```
 In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.   
 r2<r4 is True. so,set r11 to 1    
 -opcode: 0110011  
@@ -218,49 +229,57 @@ r2<r4 is True. so,set r11 to 1
 -rs1 (first source register): r2:00010  
 -rs2 (second source register): r4:00100  
 -funct3 (for slt operation): 010  
--funct7 (for slt operation): 0000000   
+-funct7 (for slt operation): 0000000
+```   
 **#32 bit instruction:**     
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c00e15f4-6cc0-4b46-8166-444cbde0e8d0)
 
 
 
 
-**7.addi r12,r4,5**   
+**7.addi r12,r4,5**     
+```
 The "addi" instruction is used to add an immediate value to a register and store the result in another register. Hence, this instruction belongs to I-type instruction set.  
 -opcode: 0010011  
 -rd (destination register): r12:01100  
 -rs1 (source register): r4:00100  
 -imm[11:0]:5:000000000101  
--funct3 (for addi operation):000      
+-funct3 (for addi operation):000
+```    
 **#32 bit instruction:**  
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c5a39651-9f0d-4142-8637-dae70bb29d1e)    
 
 
 
-**8.SW r3,r1,2**
+**8.SW r3,r1,2**  
+```
 The "sw" (store word) instruction is used to store a word from a register into memory.This instruction belongs to S-type instruction set.    
 -opcode: 0100011  
 -rs1 (base register): r1: 00001    
 -rs2 (source register): r3 00011    
 -imm[11:5]: 2:0000000    
 -imm[4:0]: 2:00010    
--funct3 (for sw operation): 010     
+-funct3 (for sw operation): 010
+```    
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6f0fdb04-a498-48b6-bf57-e257099e9234)  
 
 
-**9.LW r13,r1,2**  
+**9.LW r13,r1,2**   
+```
 The "lw" (load word) instruction is used to load a word from memory into a register. This instruction belongs to I-type instruction set.  
 -opcode: 0000011
 -rd (destination register): r13:01101
 -rs1 (base register): r1:00001
 -imm[11:0]: 2 :000000000010
--funct3 (for lw operation): 010    
+-funct3 (for lw operation): 010
+``` 
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9ff200ae-92de-4316-bccf-3ca8f8575163)   
 
 
-**10.beq r0,r0,15**    
+**10.beq r0,r0,15**     
+```
 The given instruction is of B-type instruction.  
 This encoding specifies that "beq" operation, which checks if r0 is equal to r0 then pc=pc+15 program counter will execute instruction after 15 instructions from current instruction  
 -opcode: 1100011  
@@ -270,13 +289,15 @@ This encoding specifies that "beq" operation, which checks if r0 is equal to r0 
 -imm[10:5]: 15:001111    
 -imm[4:1]: 0    
 -imm[11]: 0   
--funct3 (for beq operation): 000    
+-funct3 (for beq operation): 000
+```
 **#32 bit instruction:**  
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/044e637b-0a56-42a7-8055-2d0d1ff27e56)
 
 
 
-**11.bne r0,r1,20**    
+**11.bne r0,r1,20**        
+```
 If ro!=r1 is true then pc=pc+20----execute 20th instruction from current instruction  
 elsif r0!=r1 is false then pc=pc+4 executes next instruction  
 -opcode: 1100011  
@@ -286,34 +307,39 @@ elsif r0!=r1 is false then pc=pc+4 executes next instruction
 -imm[10:5]: 20:010100 
 -imm[4:1]: 0 
 -imm[11]: 0 
--funct3 (for bne operation): 001    
+-funct3 (for bne operation): 001
+``` 
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c8967e6b-4626-4a15-9466-a503cbb74297)  
 
 
-
-**12.sll r15,r1,r2(2)**   
+ 
+**12.sll r15,r1,r2(2)**     
+```
 The "sll" (logical left shift) instruction is used to perform a logical left shift on the value in a register. this comes under R-type instruction set.  
 opcode: 0110011
 rd (destination register): r15:01111
 rs1 (source register): r1:00001
 rs2 (shift amount): r2:00010
 funct3 (for sll operation):001
-shamt (shift amount): 2  
+shamt (shift amount): 2
+```
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/20cf822c-ad32-4ce8-bead-81bf17997a01)  
 This encoding specifies the "sll" operation, which performs a logical left shift on the value in register r1 by 2 positions and stores the result in register r15.
 
 
 
-**13.srl r16,r14,r2(2)**  
+**13.srl r16,r14,r2(2)**    
+```
 The "srl" (logical right shift) instruction is used to perform a logical right shift on the value in a register.
 -opcode: 0110011
 -rd (destination register): r16:10000
 -rs1 (source register): r14:01110
 -rs2 (shift amount): r2:00010
 -funct3 (for srl operation): 101
--shamt (shift amount): 2   
+-shamt (shift amount): 2
+``` 
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8772ade4-a749-4739-b4d3-deab70656220)  
 
