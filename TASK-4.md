@@ -74,7 +74,7 @@ I have downloaded to VDI file which has spike,pk and riscv installaton and follo
 > * Method 1 explains Manual Installation.     		
 > * Method 2 is Pre-installed VDI.  			
 > * Method 1 discusses installing Spike and pk, while Method 2 provides a VirtualBox disk image (VDI) with Spike and pk already installed.		
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 _--compiling the .C using GCC Compiler_
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
@@ -83,7 +83,7 @@ $ ./a.out
 ```
 
 
-_--compiling the .C using riscv Compiler_    
+_--compiling the .C using riscv Compiler_ **(using  Ofast)**
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ spike pk sum1ton.o
@@ -162,6 +162,19 @@ $ spike -d pk sum1ton.o
 > * The value of (16) in decimal is equivalent to (10) in hexadecimal. The stack pointer (sp) value before the execution of addi sp,sp, -16 was 0x3ffffffb50, and subtracting 0x10 from it yields **"0x3ffffffb40"**.
 > * To proceed with executing the next instructions, we will repeat the same procedure.
 
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+_--compiling the .C using riscv Compiler_ **(using  O1)**
+```
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ spike pk sum1ton.o
+$ spike -d pk sum1ton.o
+```
 
                                                                
 
