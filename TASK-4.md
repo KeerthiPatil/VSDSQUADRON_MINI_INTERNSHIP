@@ -23,18 +23,27 @@ $ echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc
 $ source ~/.bashrc   `	
 ```
 
-<img width="1119" alt="f1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/808774a0-2b93-4d62-9771-98d2981a6093">   
+
+<img width="1119" alt="f1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/808774a0-2b93-4d62-9771-98d2981a6093">       
 
 
 
-<img width="1120" alt="f2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/723711d2-3920-4c76-9e40-f7f07d06a42a">  
+
+
+<img width="1120" alt="f2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/723711d2-3920-4c76-9e40-f7f07d06a42a">      
 
 
 
-<img width="1120" alt="f3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/eb6f28cb-0089-40d1-b428-9efdae4c6dec">     
+
+
+<img width="1120" alt="f3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/eb6f28cb-0089-40d1-b428-9efdae4c6dec">          
+
+
+
 
 
             
+
 
 
 
