@@ -1,4 +1,6 @@
-**#Installation of spike**      
+**#METHOD-1** 		
+		
+**# Installation of spike**      
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c    
 $gcc sum1ton.c  
@@ -24,30 +26,19 @@ $ source ~/.bashrc   `
 ```
 
 
-<img width="1119" alt="f1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/808774a0-2b93-4d62-9771-98d2981a6093">       
+<img width="1119" alt="f1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/808774a0-2b93-4d62-9771-98d2981a6093"> 		
 
 
+<img width="1120" alt="f2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/723711d2-3920-4c76-9e40-f7f07d06a42a"> 		
 
 
-
-<img width="1120" alt="f2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/723711d2-3920-4c76-9e40-f7f07d06a42a">      
-
+<img width="1120" alt="f3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/eb6f28cb-0089-40d1-b428-9efdae4c6dec">		
 
 
+	
+_--to install pk(proxy kernal)_  		
 
-
-<img width="1120" alt="f3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/eb6f28cb-0089-40d1-b428-9efdae4c6dec">          
-
-
-
-
-
-            
-
-
-
-
-_--to install pk(proxy kernal)_  
+	
 ```
 $ cd  
 $ git clone https://github.com/riscv/riscv-pk.git    
@@ -84,6 +75,25 @@ $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ spike pk sum1ton.o
 $ spike -d pk sum1ton.o
 ```
+
+
+<img width="1120" alt="e1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/3fdd0457-6f45-4a1c-a314-ae1fa6276a38">									
+
+
+
+		
+
+
+
+
+		
+```
+$ riscv64-unknown-elf-objdump -d program_name.o | less
+```			
+<img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">   		
+
+
+
 
 
 
