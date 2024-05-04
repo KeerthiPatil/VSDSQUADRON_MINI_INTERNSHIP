@@ -182,15 +182,11 @@ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 <img width="1120" alt="11" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6ce529c3-e803-402f-aa9b-4816200a730a">    
 
-
-
-
-   
-
+<br>
 <img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">     
 
 
-
+</br>
 
 
 ```
