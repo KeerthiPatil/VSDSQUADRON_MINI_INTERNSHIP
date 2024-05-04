@@ -183,7 +183,22 @@ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 <img width="1120" alt="11" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6ce529c3-e803-402f-aa9b-4816200a730a">    
 
 
-<img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">   
+<img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">     
+
+```
+0000000000010184 <main>:
+   10184:       ff010113                addi    sp,sp,-16
+   10188:       00113423                sd      ra,8(sp)
+   1018c:       00f00613                li      a2,15
+   10190:       00500593                li      a1,5
+   10194:       00021537                lui     a0,0x21
+   10198:       18050513                addi    a0,a0,384 # 21180 <__clzdi2+0x48>
+   1019c:       26c000ef                jal     ra,10408 <printf>
+   101a0:       00000513                li      a0,0
+   101a4:       00813083                ld      ra,8(sp)
+   101a8:       01010113                addi    sp,sp,16
+   101ac:       00008067                ret
+```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
