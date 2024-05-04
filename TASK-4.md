@@ -184,7 +184,11 @@ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 
 <img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">     
-																																																																																	
+
+
+
+
+
 ```
 0000000000010184 <main>:
    10184:       ff010113                addi    sp,sp,-16
