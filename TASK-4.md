@@ -1,4 +1,4 @@
-**Spike and pk (proxy kernel)** are components of the RISC-V ISA (Instruction Set Architecture) ecosystem. 			
+# Spike and pk (proxy kernel) are components of the RISC-V ISA (Instruction Set Architecture) ecosystem. 			
 
 > * **1.Spike:** _Spike is a RISC-V ISA simulator. It emulates a RISC-V processor and allows to run RISC-V programs on computer without needing actual RISC-V hardware._				
 
@@ -6,9 +6,9 @@
 
 
  
-**#METHOD-1** 		
+# METHOD-1:		
 		
-**# Installation of spike**      
+## Installation of spike:      
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c    
 $gcc sum1ton.c  
@@ -16,7 +16,7 @@ $./a.out
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```    
   
-_--to install spike_  		
+## To install spike:		
 ```
 $ git clone https://github.com/riscv/riscv-isa-sim.git      
 $ cd riscv-isa-sim    
@@ -44,7 +44,7 @@ $ source ~/.bashrc   `
 
 
 	
-_--to install pk(proxy kernal)_  		
+## To install pk(proxy kernal):		
 
 	
 ```
@@ -67,7 +67,7 @@ $ sudo make install
 
   		              
 			
-**#METHOD-2**  		
+# METHOD-2:   		
 
 I have downloaded to VDI file which has spike,pk and riscv installaton and followed the Task-3.    
 
@@ -75,7 +75,7 @@ I have downloaded to VDI file which has spike,pk and riscv installaton and follo
 > * Method 2 is Pre-installed VDI.  			
 > * Method 1 discusses installing Spike and pk, while Method 2 provides a VirtualBox disk image (VDI) with Spike and pk already installed.		
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-_--compiling the .C using GCC Compiler_
+# Compiling the .C using GCC Compiler:
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ gcc sum1ton.c
@@ -83,7 +83,7 @@ $ ./a.out
 ```
 
 
-_--compiling the .C using riscv Compiler_ **(using  Ofast)**
+# Compiling the .C using riscv Compiler (using  Ofast):
 ```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ spike pk sum1ton.o
@@ -107,7 +107,7 @@ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 <img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">				
 
 
-_--Debugging the Assembly Language Program from sum1ton.c and Analyzing each Register Instruction_		
+# Debugging the Assembly Language Program from sum1ton.c and Analyzing each Register Instruction:		
 
 ```
 $ spike -d pk sum1ton.o
@@ -122,7 +122,8 @@ $ spike -d pk sum1ton.o
 <img width="1120" alt="e7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/73bba687-2fb4-469f-b1e4-b463ac39b7ae">				
 
                                                                                											
- **#Analyzing each instruction:**	  		
+ # Analyzing each instruction:	  
+ 
  ```
 00000000000100b0 <main>:
    100b0:       00021537                lui     a0,0x21
@@ -137,7 +138,8 @@ $ spike -d pk sum1ton.o
    100d4:       01010113                addi    sp,sp,16
    100d8:       00008067                ret
 ```
-**#FIRST INSTRUCTION:** 
+## FIRST INSTRUCTION:   
+
 > * The address_of_first_main()_instruction is 100b0 to execute this 
 ```
 (spike) until pc 0 101b0
@@ -151,7 +153,8 @@ $ spike -d pk sum1ton.o
 > * After executing the first instruction, we can verify the content of register **"a0"** by using the command reg 0 a0.  
 > * The content of register **"a0"** has been updated due to the **lui a0,0x21** instruction. which loads the upper immediate value 0x21 into the upper bits of register **"a0"**.The 0x prefix signifies that 21 is a hexadecimal value.  
 																			
-**#SECOND INSTRUCTION:**    
+## SECOND INSTRUCTION:     
+
 > * The next instruction has sp (stack pointer).  
 > * Before executing the second instruction, we will check the value of the stack pointer (sp).  
 ```
@@ -169,7 +172,7 @@ $ spike -d pk sum1ton.o
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-_--compiling the .C using riscv Compiler_ **(using  O1)**
+# Compiling the .C using riscv Compiler (using  O1):
 ```
 $ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 $ spike pk sum1ton.o
@@ -182,11 +185,11 @@ $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 
 <img width="1120" alt="11" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6ce529c3-e803-402f-aa9b-4816200a730a">    
 
-<br>
+
 <img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">     
 
 
-</br>
+
 
 
 ```
