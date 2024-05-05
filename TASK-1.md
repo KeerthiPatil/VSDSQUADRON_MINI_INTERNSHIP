@@ -8,8 +8,9 @@
 6.Installation of gtkwave    
 
 # 1.Installation of Ubuntu 22.04 using Virtual Machine:
-
-<img width="1120" alt="1 main" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7b4f8c57-2441-4bb9-a018-a6742ed2f1f2">  
+<p align="left">
+<img width="1120" alt="1 main" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7b4f8c57-2441-4bb9-a018-a6742ed2f1f2">    
+ </p> 
 
 
 
@@ -23,7 +24,9 @@ $ git clone https://github.com/riscv/riscv-gnu-toolchain
 ./configure --prefix=/opt/riscv
 make linux
 ```
-<img width="640" alt="RISC-V GNU Compiler Toolchain" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7e6d2933-1ecc-408a-8bcf-57380067b6f6">  
+<p align="left">
+<img width="640" alt="RISC-V GNU Compiler Toolchain" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7e6d2933-1ecc-408a-8bcf-57380067b6f6">    
+ </p> 
 
 # 3.Installation of Yosys:
 ```
@@ -39,14 +42,18 @@ $ make
 $ sudo make install  
 Yosys 
 ```
+<p align="left">
 <img width="641" alt="yosys" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8d16b628-0161-430e-b0fa-e3cd4be44ad2">  
+</p> 
 
   
 # 4.Installation of iverilog:
 ```
 $ sudo apt-get install iverilog     
 ```
+<p align="left">
 <img width="640" alt="iverilog installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/89c9a9a7-344e-4f25-93f2-2a8f92a52943">  
+</p> 
 
 
 # 5.Installation of gtkwave:
@@ -54,9 +61,14 @@ $ sudo apt-get install iverilog
 $ sudo apt update  
 $ sudo apt install gtkwave      
 ```
-<img width="643" alt="gtkwave installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a719993f-8cc2-4045-a504-12c75c436307">  
-<img width="642" alt="gtkwave installation 2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e0e56dc6-0dc5-439a-9e68-001bbd9ee77a">
 
+<p align="left">
+<img width="643" alt="gtkwave installation" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a719993f-8cc2-4045-a504-12c75c436307">    
+ </p>   
+ 
+<p align="left">
+<img width="642" alt="gtkwave installation 2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e0e56dc6-0dc5-439a-9e68-001bbd9ee77a">
+ </p> 
 
   
 
