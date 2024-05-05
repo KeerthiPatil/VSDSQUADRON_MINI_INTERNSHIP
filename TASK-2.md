@@ -1,5 +1,5 @@
-# TASK-3:
-**RISC-V Instruction Format**  
+# TASK-2:
+# RISC-V Instruction Format 
 RISC-V is a modern, open-source RISC (Reduced Instruction Set Computing) instruction set architecture (ISA) that is designed to be simple, extensible, and suitable for a wide range of applications. The RISC-V ISA defines 6 standard instruction formats, these formats are:  
 **1.R-type  
 2.	I-type  
