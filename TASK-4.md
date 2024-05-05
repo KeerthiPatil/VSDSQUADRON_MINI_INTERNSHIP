@@ -34,15 +34,15 @@ $ echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc
 $ source ~/.bashrc   `	
 ```
 
-
+<p align="left">
 <img width="1119" alt="f1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/808774a0-2b93-4d62-9771-98d2981a6093"> 		
-
-
+ </p> 
+<p align="left">
 <img width="1120" alt="f2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/723711d2-3920-4c76-9e40-f7f07d06a42a"> 		
-
-
+ </p> 
+<p align="left">
 <img width="1120" alt="f3" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/eb6f28cb-0089-40d1-b428-9efdae4c6dec">		
-
+ </p> 
 
 	
 ## To install pk(proxy kernal):		
@@ -57,12 +57,13 @@ $ cd build
 $ ../configure --prefix=/home/vsduser/riscv --host=riscv64-unknown-elf --with-arch=rv64gc    
 $ make    
 $ sudo make install
-```      
+```
+<p align="left">     
 <img width="1118" alt="pk1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c6359e92-9ead-4a29-a4fb-e33c5f673647">   
-
-
+</p> 
+<p align="left">
 <img width="1120" alt="pk2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/efd084f0-d4fc-4fb3-867b-50df58dfc04b">            
-
+</p> 
 
 
 
@@ -91,8 +92,8 @@ $ spike pk sum1ton.o
 $ spike -d pk sum1ton.o
 ```
 
-
-<img width="1120" alt="e1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/3fdd0457-6f45-4a1c-a314-ae1fa6276a38">									
+<p align="left">
+<img width="1120" alt="e1" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/3fdd0457-6f45-4a1c-a314-ae1fa6276a38">								</p> 	
 
 
 
@@ -104,24 +105,25 @@ $ spike -d pk sum1ton.o
 		
 ```
 $ riscv64-unknown-elf-objdump -d sum1ton.o | less
-```			
+```
+<p align="left">		
 <img width="1120" alt="e2" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0226155c-d59b-4831-9a77-694ad92404f8">				
-
+</p> 
 
 # Debugging the Assembly Language Program from sum1ton.c and Analyzing each Register Instruction:		
 
 ```
 $ spike -d pk sum1ton.o
 ```
-		
+<p align="left">		
 <img width="1120" alt="e4" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/d303da8e-cc95-4f36-bd8b-1734286afac5">		
-
-
+</p> 
+<p align="left">
 <img width="1120" alt="e6" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8831b983-f296-4b24-aeeb-25aa54bc37ab">						
-
-
+</p> 
+<p align="left">
 <img width="1120" alt="e7" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/73bba687-2fb4-469f-b1e4-b463ac39b7ae">				
-
+</p> 
                                                                                											
  # Analyzing each instruction:	  
  
@@ -183,12 +185,12 @@ $ spike -d pk sum1ton.o
 ```
 $ riscv64-unknown-elf-objdump -d sum1ton.o | less
 ```
-
+<p align="left">
 <img width="1120" alt="11" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6ce529c3-e803-402f-aa9b-4816200a730a">    
-
-
+</p> 
+<p align="left">
 <img width="1120" alt="12" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6968d471-686e-45f3-ba25-be278902bee7">     
-
+</p> 
 
 
 
