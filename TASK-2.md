@@ -8,8 +8,9 @@ RISC-V is a modern, open-source RISC (Reduced Instruction Set Computing) instruc
 5.	U-type  
 6.	J-type**  
 
+<p align="left">
 <img width="707" alt="1 " src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/66243587-505c-4fde-ada5-5c1d99089f9c">  
-
+</p> 
 
 
 
@@ -25,9 +26,10 @@ Few immediate observations we can make about these core formats:
 3. This Instructions uses 3 registers.    
 
 
-**R-Format:**    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a25b2db8-eb1a-4bb8-8b1c-bd6fd8980612)    
+**R-Format:**   
 
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a25b2db8-eb1a-4bb8-8b1c-bd6fd8980612)   
+  
 
 **opcode**: The 7 bits from 0 to 6 are opcode (operation code), used to identify the type of instruction.  
 **rd register (destination register) :** Bits 7 to 11 are the index of the rd register. The Rd register is also called the destination register, and the destination register is the register used to store the result.   
@@ -50,7 +52,8 @@ Basically,the result of the corresponding instruction is stored in "rd". For exa
 1.instructions with immediates, loads.  
 2.The I-Type format is used for various instructions in RISC-V that involve loading values from memory, branching based on immediate values, and performing arithmetic and logical operations with immediate values.   
 
-**I-Format:**    
+**I-Format:**   
+
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/5c9f97c3-ff7a-4450-acf4-79db16accde4)   
 
 **opcode:** uniquely specifies the instruction   
@@ -63,9 +66,10 @@ Basically,the result of the corresponding instruction is stored in "rd". For exa
 – always sign-extended to 32-bits before use in an arithmetic operation  
 Can represent 2^12 different immediates  
 – imm[11:0] can hold values in range [-2^11 , +2^11]    
-operation is performed by rs1 and constant defined in immediate register.    
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8b4cc265-87a8-4150-89f9-b7dcc326408c)  
+operation is performed by rs1 and constant defined in immediate register.     
 
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8b4cc265-87a8-4150-89f9-b7dcc326408c)  
+ 
 -funct3 3-bits with differnt values defining different operations.    
 -The opcode for I-Type is "0010011".  
 -rd and rs1 5-bits.    
@@ -78,12 +82,13 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 ## 3. S-type (Store type):    
 1.store instructions    
 
-![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)   
+![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)  
+
 -The opcode for S-type is "0100011".  
 -operation defined by funct3.  
 -Value is defined by rs2 and address will be calculated from rs1 and immediate value.  
 -In the S-Type instruction format of RISC-V, there is no destination register (rd) as seen in other instruction formats. Instead, the immediate value is split into two parts. The first part, represented by bits 11 to 5, is used as an offset from the base address specified by register rs1. The second part, represented by bits 4 to 0, is used in place of the rd field found in other instruction formats.  
--Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.    
+-Additionally, in the S-Type format, bits 5 to 11 of the immediate value are used in place of the funct7 field found in other instruction formats. These bits help specify the exact operation or variant of the instruction, similar to how funct7 is used in other formats.   <
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/954f90e4-6348-4c00-9514-38ceb0af57b3)
 
 
@@ -98,6 +103,7 @@ All instructions are defined by funct3 and opcodes indicates wheather its type L
 Branch instructions      
 
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0bcb8795-d7f3-421b-9ea1-f8eb04a06a5c)      
+
 B-type instructions are mainly used as branch instructions, but they are conditional Branch.  
 B-format is mostly same as S-Format, with two register sources (rs1/rs2) and a 12-bit
 immediate    
@@ -109,17 +115,20 @@ The opcode for type B is "1100011"
 operation between rs1 and rs2( different conditions)  
 if(condition) = True   
 then pc=pc+immediate value * offset    
-else pc=pc+4;    
+else pc=pc+4;     
+
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/53a4be07-0823-44e6-8472-a3ef65d5e855)  
-    
+
 Branch instructions include BEQ(equal to),BNE(not equal to),BLT(less than),BGE(greater than),
 BLTU(less than unsigned),BGEU(greater than unsigned).  
 To calculate offset address we need to compose immediate value:IMMD={SXT(IMM[12:1],1'B0}.  
 
 ## 5. U-type (upperimmediate-type):
 instructions with upper immediates.  
-upper immediate is 20-bits.    
+upper immediate is 20-bits.     
+
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/00434365-ebf7-4e53-a7ed-4a74b3baa83f)  
+ 
 -A 20-bit immediate is provided in the U-type instruction.  
 -The final operation result is related to the 20-bit immediate, and the result is written back to the rd register.   
 -The opcode determines the type of operation. There are no funct3, rs1, rs2, and funct7 in U-type.  
@@ -131,8 +140,10 @@ LUI is identified by opcode. The opcode name is LUI and the value is 0110111. Th
 AUIPC is identified by opcode, the opcode name is AUIPC, and the value is 0010111. The instruction is to place the 20-bit immediate in the high 20 bits of the 32-bit, and add the low 12 to the current PC and write it into the rd register. PC is the program counter.     
 
 ## 6. J-type:   
- jump instructions    
+ jump instructions   
+
  ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bbddfcfd-5a06-48e1-a515-b3559ba0f0c0)    
+   
 The format of this instruction is very similar to U-type, it only have Rd register and immediate and opcode. At the same time, the immediate of J-type is also disrupted. That means that the CPU must first put the immediate numbers together to restore the original immediate numbers when decoding.  
 
 This instruction is used to jump to particular location and address is defined by immediate value and stores next instruction address in link register    
