@@ -1,4 +1,4 @@
-module INS_RV32EC(clk,RN,NPC,WB_OUT);
+module SDSQUADRON_MINI_INTERNSHIP(clk,RN,NPC,WB_OUT);
 input clk;
 input RN;
 //input EN;
