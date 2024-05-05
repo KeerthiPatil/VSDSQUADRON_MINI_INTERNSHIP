@@ -1,4 +1,4 @@
-module SDSQUADRON_MINI_INTERNSHIP(clk,RN,NPC,WB_OUT);
+module VSDSQUADRON_MINI_INTERNSHIP(clk,RN,NPC,WB_OUT);
 input clk;
 input RN;
 //input EN;
