@@ -42,7 +42,7 @@ The address of the main section is 10184 and its byte addressing. Every next ins
 
 ## Calculation of Number of instrustions:   
 
- Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current  
+> *  Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current  
                             instruction block)/4     
                         =(101b0 -10184)/4   
                         =(B)/4
@@ -63,8 +63,8 @@ $riscv64-unknown-elf-objdump -d sum1ton.o | less
    
 ## Calculation of Number of instrustions:    
   
-*Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
-                           instruction block)/4*       
+> *  Number of instrustions = (memory addresses of the start of the next instruction block - memory addresses of the start of the current 
+                           instruction block)/4      
                         =(100dc -100b0)/4           
                         =(2C)/4      
                         =(11)         
@@ -74,8 +74,7 @@ So, in total 11 instructions are present in main() function.
 
 
 # CONCLUSION:  
-_"While the number of instructions hasn't changed, the program's size has decreased. This change is noticeable in the byte address of the main() function, which previously started with 101b0 but now starts with 100dc."_
-
+**_"While the number of instructions hasn't changed, the program's size has decreased. This change is noticeable in the byte address of the main() function, which previously started with 101b0 but now starts with 100dc."_**
 
 
 
