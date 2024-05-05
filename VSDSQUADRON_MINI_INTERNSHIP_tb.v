@@ -1,4 +1,4 @@
-module INS_RV32EC_tb;
+module VSDSQUADRON_MINI_INTERNSHIP_tb;
 
 reg clk,RN;
 wire [31:0]WB_OUT,NPC;
@@ -12,8 +12,8 @@ initial begin
 RN  = 1'b1;
 clk = 1'b1;
 
-$dumpfile ("INS_RV32EC.vcd"); //by default vcd
-$dumpvars (0, INS_RV32EC_tb);
+$dumpfile ("VSDSQUADRON_MINI_INTERNSHIP.vcd"); //by default vcd
+$dumpvars (0, VSDSQUADRON_MINI_INTERNSHIP_tb);
   
   #5 RN = 1'b0;
   
