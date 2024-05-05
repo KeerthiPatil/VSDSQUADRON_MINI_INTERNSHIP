@@ -19,7 +19,7 @@ Few immediate observations we can make about these core formats:
 2.They all reserve the first 7 bits ([6:0]) for the opcode.  
 3.Register-based operations.    
 
-**1.R-type (Register type):**  
+## 1. R-type (Register type):  
 1.It is Used for arithmetic, logic, and shift operations.  
 2.The length of a binary instruction is 32bit. 
 3. This Instructions uses 3 registers.    
@@ -46,7 +46,7 @@ Basically,the result of the corresponding instruction is stored in "rd". For exa
 
 
   
-**2.I-type (immediate type):**   
+## 2. I-type (immediate type):  
 1.instructions with immediates, loads.  
 2.The I-Type format is used for various instructions in RISC-V that involve loading values from memory, branching based on immediate values, and performing arithmetic and logical operations with immediate values.   
 
@@ -75,7 +75,7 @@ Here, one of the higher-order immediate bits is used to distinguish "shift right
 -The above image shows the various I-Type instructions and their descriptions.    
 -The instructions of I-type are ADDI,SLTI,SLTIU,XORI,ORI,ANDI for shift operations the shift value is stored in "shamt[4:0]" which is of 5bit of immediate value.   
 
-**3.S-type (Store type):**    
+## 3. S-type (Store type):    
 1.store instructions    
 
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/1b9e2ee9-5fd5-4cd1-8378-4722cfb2d507)   
@@ -94,7 +94,7 @@ Store:M[Address]=rs2
 
 All instructions are defined by funct3 and opcodes indicates wheather its type LOAD or STORE Instruction.  
 
-**4.B-type (Branch type):**    
+## 4. B-type (Branch type):    
 Branch instructions      
 
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0bcb8795-d7f3-421b-9ea1-f8eb04a06a5c)      
@@ -116,7 +116,7 @@ Branch instructions include BEQ(equal to),BNE(not equal to),BLT(less than),BGE(g
 BLTU(less than unsigned),BGEU(greater than unsigned).  
 To calculate offset address we need to compose immediate value:IMMD={SXT(IMM[12:1],1'B0}.  
 
-**5.U-type (upperimmediate-type):**
+## 5. U-type (upperimmediate-type):
 instructions with upper immediates.  
 upper immediate is 20-bits.    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/00434365-ebf7-4e53-a7ed-4a74b3baa83f)  
@@ -130,7 +130,7 @@ LUI is identified by opcode. The opcode name is LUI and the value is 0110111. Th
 2.AUIPC – Add Upper Immediate to PC.   
 AUIPC is identified by opcode, the opcode name is AUIPC, and the value is 0010111. The instruction is to place the 20-bit immediate in the high 20 bits of the 32-bit, and add the low 12 to the current PC and write it into the rd register. PC is the program counter.     
 
-**6.J-type**   
+## 6. J-type:   
  jump instructions    
  ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bbddfcfd-5a06-48e1-a515-b3559ba0f0c0)    
 The format of this instruction is very similar to U-type, it only have Rd register and immediate and opcode. At the same time, the immediate of J-type is also disrupted. That means that the CPU must first put the immediate numbers together to restore the original immediate numbers when decoding.  
@@ -143,10 +143,10 @@ JALR is for long jump.
 IMMI= SXT( imm[11:0] )
 JALR : rd = PC +4 = { ( rs1 + IMMI ), 1'b0}  
 
-**Analyzing the instructions**     
+# Analyzing the instructions:     
 
 
-**1.add r6,r2,r1**      
+## 1. add r6,r2,r1      
 ```
 The given instruction, "add r6, r2, r1," belongs to the R-type instruction set in RISC-V, which is used for arithmetic and logical operations.    
 -opcode: 0110011  
@@ -159,9 +159,9 @@ The given instruction, "add r6, r2, r1," belongs to the R-type instruction set i
 **#32 bit instruction:**  
     ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/7ce1736b-493c-4f38-b49a-9e8f402527a0)   
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-**2.sub r7,r1,r2**       
+## 2. sub r7,r1,r2       
 ```
 The "sub" instruction is also an R-type instruction, similar to the "add" instruction.  
 -opcode: 0110011    
@@ -174,9 +174,9 @@ The "sub" instruction is also an R-type instruction, similar to the "add" instru
 **#32 bit instruction:**     
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/64922832-63ff-49d7-87e6-bebb8579e0d4)  
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-**3.and r8,r1,r3**    
+## 3. and r8,r1,r3    
 ```
 In RISC-V, the "and" instruction is also an R-type instruction.  
 -opcode: 0110011    
@@ -189,9 +189,9 @@ In RISC-V, the "and" instruction is also an R-type instruction.
 **#32 bit instruction:**  
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/52177b2d-730f-4bd7-badf-c49b9dff5d43)  
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-**4.or r9,r2,r5**   
+## 4. or r9,r2,r5  
 ```
 In RISC-V, the "or" instruction is also an R-type instruction.   
 -opcode: 0110011  
@@ -204,9 +204,9 @@ In RISC-V, the "or" instruction is also an R-type instruction.
 **#32 bit instruction:**     
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/43005d73-f08e-4895-8289-34c49d2d492b)  
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-**5.xor r10,r1,r4**   
+## 5. xor r10,r1,r4   
 ```
 In RISC-V, the "xor" instruction is also an R-type instruction.  
 -opcode: 0110011  
@@ -220,7 +220,9 @@ In RISC-V, the "xor" instruction is also an R-type instruction.
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/79331d6a-2efc-4e8b-b422-4a30c5ce2b24)    
 
 
-**6.slt r11,r2,r4**    
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+## 6. slt r11,r2,r4  
 ```
 In RISC-V, the "slt"(set less than)instruction is also an R-type instruction.   
 r2<r4 is True. so,set r11 to 1    
@@ -235,9 +237,9 @@ r2<r4 is True. so,set r11 to 1
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c00e15f4-6cc0-4b46-8166-444cbde0e8d0)
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-**7.addi r12,r4,5**     
+## 7. addi r12,r4,5     
 ```
 The "addi" instruction is used to add an immediate value to a register and store the result in another register. Hence, this instruction belongs to I-type instruction set.  
 -opcode: 0010011  
@@ -250,8 +252,9 @@ The "addi" instruction is used to add an immediate value to a register and store
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c5a39651-9f0d-4142-8637-dae70bb29d1e)    
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**8.SW r3,r1,2**  
+## 8. SW r3,r1,2  
 ```
 The "sw" (store word) instruction is used to store a word from a register into memory.This instruction belongs to S-type instruction set.    
 -opcode: 0100011  
@@ -265,7 +268,9 @@ The "sw" (store word) instruction is used to store a word from a register into m
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/6f0fdb04-a498-48b6-bf57-e257099e9234)  
 
 
-**9.LW r13,r1,2**   
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 9. LW r13,r1,2   
 ```
 The "lw" (load word) instruction is used to load a word from memory into a register. This instruction belongs to I-type instruction set.  
 -opcode: 0000011
@@ -277,8 +282,10 @@ The "lw" (load word) instruction is used to load a word from memory into a regis
 **#32 bit instruction:**    
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9ff200ae-92de-4316-bccf-3ca8f8575163)   
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**10.beq r0,r0,15**     
+
+## 10. beq r0,r0,15    
 ```
 The given instruction is of B-type instruction.  
 This encoding specifies that "beq" operation, which checks if r0 is equal to r0 then pc=pc+15 program counter will execute instruction after 15 instructions from current instruction  
@@ -295,8 +302,9 @@ This encoding specifies that "beq" operation, which checks if r0 is equal to r0 
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/044e637b-0a56-42a7-8055-2d0d1ff27e56)
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**11.bne r0,r1,20**        
+## 11. bne r0,r1,20        
 ```
 If ro!=r1 is true then pc=pc+20----execute 20th instruction from current instruction  
 elsif r0!=r1 is false then pc=pc+4 executes next instruction  
@@ -313,8 +321,9 @@ elsif r0!=r1 is false then pc=pc+4 executes next instruction
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/c8967e6b-4626-4a15-9466-a503cbb74297)  
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
  
-**12.sll r15,r1,r2(2)**     
+## 12. sll r15,r1,r2(2)     
 ```
 The "sll" (logical left shift) instruction is used to perform a logical left shift on the value in a register. this comes under R-type instruction set.  
 opcode: 0110011
@@ -329,8 +338,9 @@ shamt (shift amount): 2
 This encoding specifies the "sll" operation, which performs a logical left shift on the value in register r1 by 2 positions and stores the result in register r15.
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**13.srl r16,r14,r2(2)**    
+## 13. srl r16,r14,r2(2)    
 ```
 The "srl" (logical right shift) instruction is used to perform a logical right shift on the value in a register.
 -opcode: 0110011
@@ -344,7 +354,7 @@ The "srl" (logical right shift) instruction is used to perform a logical right s
 ![image](https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/8772ade4-a749-4739-b4d3-deab70656220)  
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   
 
