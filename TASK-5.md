@@ -26,11 +26,17 @@ $ gtkwave ins_RV32EC.vcd
 ```
 <br>
 <img width="1119" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bad745a2-2848-4f9f-b3ba-d4f3f9a72def">  
-<br>   
-
-
-
-
-
-
+<br>     
+<br>
+<img width="1120" alt="a" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a8b4149c-7a5b-46a4-ba43-3b2dd7a75aed">
+<br>
+<br>
+<img width="1118" alt="c" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/d3558f70-2414-4fe6-b6dd-5ffc069faeba">
+<br>  
+<br>  
+<img width="1112" alt="d" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9db55ee2-f493-4171-b8d0-4247bd7835fb">
+<br>    
+<br>  
+<img width="1120" alt="e" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/b1207569-e76f-4c02-b70f-f32d3c627642">
+<br>  
 
