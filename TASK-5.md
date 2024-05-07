@@ -24,4 +24,8 @@ $ vvp VSDSQUADRON_MINI_INTERNSHIP
 ```
 $ gtkwave ins_RV32EC.vcd
 ```
+<br>
+<img width="1119" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/bad745a2-2848-4f9f-b3ba-d4f3f9a72def">  
+<br>
+
 
