@@ -39,7 +39,10 @@ $ gtkwave ins_RV32EC.vcd
 <br>  
 <img width="1120" alt="e" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/b1207569-e76f-4c02-b70f-f32d3c627642">
 <br>  
-<hr>  
+<hr>     
+
+# OUTPUT WAVEFORM: 
+
 <br> 
 <img width="572" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e490c794-5d88-4898-b719-c4df8c762827">
 <br> 
