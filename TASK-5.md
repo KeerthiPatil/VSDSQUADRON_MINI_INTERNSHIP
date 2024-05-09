@@ -35,8 +35,12 @@ $ gtkwave ins_RV32EC.vcd
 <br>  
 <br>  
 <img width="1112" alt="d" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/9db55ee2-f493-4171-b8d0-4247bd7835fb">
-<br>    
+<br>      
 <br>  
 <img width="1120" alt="e" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/b1207569-e76f-4c02-b70f-f32d3c627642">
 <br>  
 
+# Instruction 1: ADD R6, R2, R1  
+<br> 
+<img width="1119" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/80cd817c-0a62-4bb8-b621-41523e18695a">
+<br> 
