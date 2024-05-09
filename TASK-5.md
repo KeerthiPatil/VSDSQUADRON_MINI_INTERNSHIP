@@ -41,7 +41,8 @@ $ gtkwave ins_RV32EC.vcd
 <br>  
 <hr>     
 
-# OUTPUT WAVEFORMS: 
+# OUTPUT WAVEFORMS:   
+The output waveform illustrates the sequence of operations executed within a 5-stage pipelined architecture.
 
 <br> 
 <img width="572" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/e490c794-5d88-4898-b719-c4df8c762827">
