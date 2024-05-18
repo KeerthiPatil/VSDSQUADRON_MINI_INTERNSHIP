@@ -14,7 +14,7 @@ The objective of this project is to:
 > * 1. **VSDSquadron Mini Board**: The main microcontroller board used for processing and logic implementation.
 > * 2. **Breadboard and Jumper Wires**: For building and testing the circuit.
 > * 3. **LEDs**: To display the comparison results.This project requires 3 LEDs.
-> * 4. **Resistors**: To limit the current to the LEDs.
+> * 4. **Resistors**: To limit the current to the LEDs.220Ohm resistors are used in this project.
 
 
 ### Pin Configuration:
