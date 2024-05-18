@@ -24,8 +24,6 @@ The objective of this project is to:
 | LED2 | PIN5 (PD5) |
 | LED3 | PIN6 (PD6) |
 
-
-  
 ### Circuit Diagram:    
 <br>  
 <img width="608" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/443f2927-aba2-464b-a592-c738de95d687">  
