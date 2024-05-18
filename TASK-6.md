@@ -3,7 +3,7 @@
 This project aims to design and implement a 2-bit comparator using the VSDSquadron Mini board. A 2-bit comparator is a digital circuit that compares two 2-bit binary numbers and indicates whether one number is greater than, less than, or equal to the other. The project involves designing the comparator logic using C programming in Visual Studio Code, setting up the hardware connections on a breadboard, and verifying the functionality through LEDs connected to the output.  
 
 ###  Project Objective:    
-The objective of this project is to:
+The main objectives of this project are:
 
 > * 1. Design a 2-bit comparator using C programming.
 > * 2. Implement the designed comparator on the VSDSquadron Mini board.  
@@ -15,14 +15,20 @@ The objective of this project is to:
 > * 2. **Breadboard and Jumper Wires**: For building and testing the circuit.
 > * 3. **LEDs**: To display the comparison results.This project requires 3 LEDs.
 > * 4. **Resistors**: To limit the current to the LEDs.220Ohm resistors are used in this project.
+> * 5. **Switches**: 4 push-button switches for input.
 
 
 ### Pin Configuration:
-| LED   | VSD SQUADRON BOARD |
+| LED AND PUSH BUTTONS   | VSD SQUADRON BOARD |
 | --------------- | --------------- |
 | LED1 | PIN4 (PD4) |
 | LED2 | PIN5 (PD5) |
 | LED3 | PIN6 (PD6) |
+| SWITCH1 | PIN0 (PC0) |
+| SWITCH2 | PIN1 (PC1) |
+| SWITCH3 | PIN2 (PC2) |
+| SWITCH4 | PIN3 (PC3) |
+
 
 ### Circuit Diagram:    
 <img width="608" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/443f2927-aba2-464b-a592-c738de95d687">  
@@ -103,7 +109,7 @@ int main(void) {
 ```
 
 ### Project Demonstration:  
-[Watch the project video here](https://drive.google.com/file/d/1uu4_C-AHJTMlxc4lfiAnMeSggdemhc8h/view?usp=drive_link)
+
 
 
 ### Conclusion
