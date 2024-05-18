@@ -1,6 +1,6 @@
 # **VSDSquadron Mini Internship 2024**    
  
-<hr>  
+
 
 <a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/521f141724596c3a0b9e766b10dd59874f90fe80/TASK-1.md">Task-1</a> 
 :**Installation of Ubuntu on VirtualBox and install the RISC-V GNU Toolchain, GTKWave, Yosys, and Icarus Verilog (iverilog) for this internship.**  
@@ -24,4 +24,4 @@
 
 <a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/969add0dd9c9431881567f18c6bd7d800c6be00f/TASK-6.md">Task-6</a> **:As the final task, I completed a project that involved implementing a 2-bit comparator using the VSDSquadron Mini board.**  
 
-<hr>
+
