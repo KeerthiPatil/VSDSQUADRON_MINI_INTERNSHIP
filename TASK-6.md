@@ -103,7 +103,7 @@ int main(void) {
         } else {
             GPIO_SetBits(GPIOD, LT_PIN);
         }
-        Delay_Ms(1000);
+        Delay_Ms(3000);
     }
 }
 ```
