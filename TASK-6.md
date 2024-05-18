@@ -83,8 +83,6 @@ int main(void) {
 ```
 
 ### Project Demonstration:  
-[video Link](https://drive.google.com/file/d/1uu4_C-AHJTMlxc4lfiAnMeSggdemhc8h/view?usp=drive_link)
+[Project Video](https://drive.google.com/file/d/1uu4_C-AHJTMlxc4lfiAnMeSggdemhc8h/view?usp=drive_link)
 
-</details>  
---------------------------------------------------------------  
-<details>
+
