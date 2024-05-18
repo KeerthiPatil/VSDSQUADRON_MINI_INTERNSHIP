@@ -43,60 +43,62 @@ The objective of this project is to:
 ```
 #include <ch32v00x.h>
 #include <debug.h>
-#include<stdio.h>
 
-#define LED1_PIN GPIO_Pin_4 //yellow LED
-#define LED2_PIN GPIO_Pin_5 //red LED
-#define LED3_PIN GPIO_Pin_6 //green LED
-#define LED_PORT GPIOD
+// Define pins for the inputs (assuming PC0, PC1 for A and PC2, PC3 for B)
+#define A0_PIN GPIO_Pin_0
+#define A1_PIN GPIO_Pin_1
+#define B0_PIN GPIO_Pin_2
+#define B1_PIN GPIO_Pin_3
+
+// Define pins for the outputs (assuming PD4 for A > B, PD5 for A == B, PD6 for A < B)
+#define GT_PIN GPIO_Pin_4
+#define EQ_PIN GPIO_Pin_5
+#define LT_PIN GPIO_Pin_6
 
 void GPIO_Config(void) {
-    // Enable the clock for GPIOD
+    GPIO_InitTypeDef GPIO_InitStructure;
 
+    // Enable GPIO clocks for port C and port D
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
 
-    // Configure PD4, PD5, and PD6 as outputs
-    GPIO_InitTypeDef GPIO_InitStructure;
-    GPIO_InitStructure.GPIO_Pin = LED1_PIN | LED2_PIN | LED3_PIN ;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Push-pull output
+    // Configure input pins (PC0, PC1, PC2, PC3)
+    GPIO_InitStructure.GPIO_Pin = A0_PIN | A1_PIN | B0_PIN | B1_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+    // Configure output pins (PD4, PD5, PD6)
+    GPIO_InitStructure.GPIO_Pin = GT_PIN | EQ_PIN | LT_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(LED_PORT, &GPIO_InitStructure);
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
 }
 
-void compare_2bit(uint8_t a, uint8_t b) {
-    // Clear all LEDs
-    GPIO_ResetBits(LED_PORT, LED1_PIN | LED2_PIN | LED3_PIN);
-
-    if (a > b) {
-      // Light up LED1 if a > b
-        GPIO_SetBits(LED_PORT, LED1_PIN);
-    } else if (a == b) {
-        // Light up LED2 if a == b
-        GPIO_SetBits(LED_PORT, LED2_PIN);
-    } else {
-        // Light up LED3 if a < b
-        GPIO_SetBits(LED_PORT, LED3_PIN);
-    }  
-    
-}  
-
-int main(void) {   
+int main(void) {
+    // Initialize the GPIO
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     SystemCoreClockUpdate();
     Delay_Init();
-    // Initialize the GPIO for the LEDs
     GPIO_Config();
 
+    while (1) {
+        // Read the inputs from port C
+        uint8_t A = (GPIO_ReadInputDataBit(GPIOC, A0_PIN) << 0) | (GPIO_ReadInputDataBit(GPIOC, A1_PIN) << 1);
+        uint8_t B = (GPIO_ReadInputDataBit(GPIOC, B0_PIN) << 0) | (GPIO_ReadInputDataBit(GPIOC, B1_PIN) << 1);
 
-    // Main loop to iterate over all possible 2-bit numbers  
-     for (uint8_t a = 0; a <= 3; a++) {
-        for (uint8_t b = 0; b <= 3; b++) {
-            compare_2bit(a, b);
-            Delay_Ms(5000); // Delay for visualization
+        // Clear output pins on port D
+        GPIO_ResetBits(GPIOD, GT_PIN | EQ_PIN | LT_PIN);
+
+        // Compare A and B and set the corresponding output on port D
+        if (A > B) {
+            GPIO_SetBits(GPIOD, GT_PIN);
+        } else if (A == B) {
+            GPIO_SetBits(GPIOD, EQ_PIN);
+        } else {
+            GPIO_SetBits(GPIOD, LT_PIN);
         }
+        Delay_Ms(1000);
     }
-    
-    return 0;
 }
 ```
 
