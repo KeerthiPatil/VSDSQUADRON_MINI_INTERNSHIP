@@ -16,6 +16,16 @@ The objective of this project is to:
 > * 3. **LEDs**: To display the comparison results.This project requires 3 LEDs.
 > * 4. **Resistors**: To limit the current to the LEDs.
 
+
+### Pin Configuration:
+| LED   | VSD SQUADRON BOARD |
+| --------------- | --------------- |
+| LED1 | PIN4 (PD4) |
+| LED2 | PIN5 (PD5) |
+| LED3 | PIN6 (PD6) |
+
+
+  
 ### Circuit Diagram:    
 <br>  
 <img width="608" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/443f2927-aba2-464b-a592-c738de95d687">  
