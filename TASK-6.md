@@ -16,6 +16,17 @@ The objective of this project is to:
 > * 3. **LEDs**: To display the comparison results.This project requires 3 LEDs.
 > * 4. **Resistors**: To limit the current to the LEDs.
 
+### Circuit Diagram:    
+<br>  
+<img width="608" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/443f2927-aba2-464b-a592-c738de95d687">  
+<br>   
+
+### Functional Description:
+> * A > B: LED1 (Yellow color) lights up when a is greater than b.
+> * A < B: LED2 (Red color) lights up when a is less than b.
+> * A = B: LED3 (Green color) lights up when both numbers are equal.
+
+
 ### Truth Table of 2-bit comparator:     
 <img width="428" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/0ca58fae-82df-4591-af4e-ace593d8bd82">
 <br>    
@@ -87,4 +98,4 @@ int main(void) {
 
 
 ### Conclusion
-**This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design.Overall, this project was a valuable learning experience**
+**This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design.Overall, this project was a valuable learning experience.**
