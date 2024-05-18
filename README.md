@@ -20,7 +20,8 @@
 <hr>  
 
 <a href="TASK-5.md">Task-5</a> **:Conducting a Functional Simulation Experiment with RISC-V Core : Verilog Netlist and Testbench, and Observing Waveform**
-<hr>  
+<hr>     
 
-<a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/969add0dd9c9431881567f18c6bd7d800c6be00f/TASK-6.md">Project using VSDSquadron Mini Board</a>
+<a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/969add0dd9c9431881567f18c6bd7d800c6be00f/TASK-6.md">Task-6</a> **:As the final task, I completed a project that involved implementing a 2-bit comparator using the VSDSquadron Mini board.**  
+
 <hr>
