@@ -17,8 +17,10 @@
 
 <a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/013d3afb9cf6bb129c51351145294a6a20d56b6d/TASK-4.md">Task-4</a>
 **:Conduct SPIKE simulation and debug the C code using Spike's interactive debugging mode.**  
-<hr>
-<a href="TASK-5.md">Task-5</a>
-<hr>
+<hr>  
+
+<a href="TASK-5.md">Task-5</a> **:Conducting a Functional Simulation Experiment with RISC-V Core : Verilog Netlist and Testbench, and Observing Waveform**
+<hr>  
+
 <a href="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/blob/969add0dd9c9431881567f18c6bd7d800c6be00f/TASK-6.md">Project using VSDSquadron Mini Board</a>
 <hr>
