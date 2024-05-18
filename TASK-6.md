@@ -31,7 +31,7 @@ The main objectives of this project are:
 
 
 ### Circuit Diagram:    
-<img width="608" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/443f2927-aba2-464b-a592-c738de95d687">  
+<img width="592" alt="image" src="https://github.com/KeerthiPatil/VSDSQUADRON_MINI_INTERNSHIP/assets/167600409/a47d7ce5-ce7e-4189-bf16-c8aac225db1f">
 <br>   
 
 ### Functional Description:
