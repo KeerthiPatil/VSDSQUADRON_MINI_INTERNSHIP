@@ -35,9 +35,9 @@ The main objectives of this project are:
 <br>   
 
 ### Functional Description:
-> * A > B: LED1 (Yellow color) lights up when a is greater than b.
-> * A < B: LED2 (Red color) lights up when a is less than b.
-> * A = B: LED3 (Green color) lights up when both numbers are equal.
+> * A > B: LED1  lights up when a is greater than b.
+> * A < B: LED2  lights up when a is less than b.
+> * A = B: LED3  lights up when both numbers are equal.
 
 
 ### Truth Table of 2-bit comparator:     
